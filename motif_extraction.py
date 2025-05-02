@@ -49,6 +49,21 @@ output_may1_streme_cluster_0/sites.tsv
 output_may1_streme_cluster_0/streme.html
 output_may1_streme_cluster_0/streme.txt
 output_may1_streme_cluster_0/streme.xml
+
+streme.html
+An interactive HTML report summarizing discovered motifs, their logos, p-values, E-values, and occurrence counts 
+
+streme.txt
+The motifs in MEME motif format (position-weight matrices and consensus) for downstream tools like FIMO or Tomtom 
+
+sites.tsv
+A table of every match (site) in your input sequences that exceeds the motif’s match threshold: one line per site, with sequence name, position, score, and strand 
+
+sequences.tsv
+A summary of which sequences contain at least one match for each motif, distinguishing true positives (in your data) from false positives (in shuffled background) 
+
+streme.xml
+An XML version of all results for programmatic parsing
 """
 
 ###############################################
