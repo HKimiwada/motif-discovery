@@ -1,3 +1,4 @@
+# Ran in VS Code.
 # Used STREME in terminal for motif extraction on clustered data (FASTA file)
 
 ###############################################
