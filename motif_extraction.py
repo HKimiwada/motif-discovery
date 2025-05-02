@@ -37,7 +37,7 @@ Write all results into directory streme_cluster0_out/.
 open output_may1_streme_cluster_0/streme.html -> Run in terminal to show STREME analysis results in browser.
 
 Reference:
-.venv(base) hikimiwada@Hirokis-MacBook-Air motif-discovery % git ls-files
+.venv(base) hikimiwada@Hirokis-MacBook-Air motif-discovery % git ls-files (code to show all tracked files)
 .DS_Store
 Data/cluster_0.fasta
 README.md
@@ -65,6 +65,32 @@ A summary of which sequences contain at least one match for each motif, distingu
 streme.xml
 An XML version of all results for programmatic parsing
 """
+###############################################
+# Extracting motif candidates
+###############################################
+import re
+
+infile  = 'output_may1_streme_cluster_0/streme.txt'
+outfile = 'output_may1_streme_cluster_0/motif_candidates_export.txt'
+
+consensi = []
+with open(infile) as fh:
+    for line in fh:
+        if line.startswith('MOTIF '):
+            # line looks like: "MOTIF 1-VSAL STREME-1"
+            rank_dash_consensus = line.split()[1]        # e.g. "1-VSAL"
+            consensus = rank_dash_consensus.split('-',1)[1]
+            consensi.append(consensus)
+
+# keep only unique, in discovery order
+seen = set()
+unique = [c for c in consensi if not (c in seen or seen.add(c))]
+
+with open(outfile, 'w') as out:
+    for c in unique:
+        out.write(c + '\n')
+
+print(f"Wrote {len(unique)} motif candidates to {outfile}")
 
 ###############################################
 # Code for motif EDA
