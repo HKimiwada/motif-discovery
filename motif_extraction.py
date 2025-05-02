@@ -33,6 +33,22 @@ Report motifs with p-value < 0.05 (default).
 
 -oc streme_cluster0_out
 Write all results into directory streme_cluster0_out/.
+
+open output_may1_streme_cluster_0/streme.html -> Run in terminal to show STREME analysis results in browser.
+
+Reference:
+.venv(base) hikimiwada@Hirokis-MacBook-Air motif-discovery % git ls-files
+.DS_Store
+Data/cluster_0.fasta
+README.md
+embedding_clustering.py
+motif_extraction.py
+motif_extraction_preprocessing.py
+output_may1_streme_cluster_0/sequences.tsv
+output_may1_streme_cluster_0/sites.tsv
+output_may1_streme_cluster_0/streme.html
+output_may1_streme_cluster_0/streme.txt
+output_may1_streme_cluster_0/streme.xml
 """
 
 ###############################################
