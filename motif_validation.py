@@ -90,3 +90,14 @@ print(corr_df.sort_values("pearson_r", ascending=False))
 ###############################################
 # Visualize Correlation
 ############################################### 
+sig_df = corr_df[corr_df['significant']]
+for _, row in sig_df.iterrows():
+    motif = row['motif']
+    prop = row['property']
+    plt.figure()
+    plt.scatter(val_df[f'count_{motif}'], val_df[prop], alpha=0.7)
+    plt.xlabel(f'Count of motif {motif}')
+    plt.ylabel(prop.replace('_', ' ').title())
+    plt.title(f'{prop.title()} vs. {motif} (r={row["pearson_r"]:.2f}, p_adj ≤ 0.05)')
+    plt.tight_layout()
+    plt.show()
