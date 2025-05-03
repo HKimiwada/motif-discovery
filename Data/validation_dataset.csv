@@ -1,0 +1,447 @@
+idv_id,family,genus,species,ncbi_tax_id,wsc_lsid,type_of_web,sex,sampled_at,country,size,toughness,toughness_sd,young's_modulus,young's_modulus_sd,tensile_strength,tensile_strength_sd,strain_at_break,strain_at_break_sd,one_percent_weightloss,five_percent_weightloss,ten_percent_weightloss,crystallinity,birefringence,birefringence_sd,diameter,diameter_sd,water_content,supercontraction,supercontraction_sd
+315,Araneidae,Araneus,ishisawai,1112384,urn:lsid:nmbe.ch:spidersp:014949,Unknown,Female,2014-10-09,Japan,,0.425,0.222,17.5,8.4,2.62,0.36,31.0,15.5,213.0,279.0,300.0,17.0,84.0,39.4,1.39,0.3,6.9,,
+3470,Araneidae,Plebs,sachalinensis,2337611,urn:lsid:nmbe.ch:spidersp:015887,Unknown,Female,2016-05-13,Japan,5,0.421,0.111,30.4,2.5,3.06,0.37,24.1,4.1,,,,,58.9,9.7,0.72,0.03,,,
+7304,Araneidae,Nephilingis,livida,2511332,urn:lsid:nmbe.ch:spidersp:043939,Unknown,Female,2018-10-25,Madagascar,24,0.39,0.127,16.9,6.52,2.97,0.17,21.4,6.0,236.0,290.0,307.0,35.0,40.9,11.6,3.37,0.43,5.8,22.1,2.5
+6727,Araneidae,Argiope,keyserlingi,332532,urn:lsid:nmbe.ch:spidersp:015377,Unknown,Female,2017-10-30,Australia,10,0.368,0.122,31.7,9.7,2.45,0.43,22.4,6.9,216.0,274.0,297.0,20.0,42.7,6.6,0.43,0.03,7.4,,
+7299,Araneidae,Caerostris,darwini,1538125,urn:lsid:nmbe.ch:spidersp:043500,Unknown,Female,2018-10-25,Madagascar,17,0.359,0.02,8.46,0.52,0.97,0.03,65.3,3.9,189.0,268.0,292.0,24.0,27.0,0.9,4.31,0.06,6.6,,
+3793,Araneidae,Metazygia,zilloides,2337760,urn:lsid:nmbe.ch:spidersp:016493,Unknown,Female,2016-06-30,United States,,0.31,0.076,19.0,6.28,2.52,0.25,23.6,5.0,,,,6.0,61.6,10.5,0.36,0.03,,,
+5621,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Female,2017-06-11,China,7,0.306,0.088,10.9,2.25,2.23,0.4,27.1,3.1,231.0,280.0,300.0,12.0,37.2,5.0,0.71,0.04,9.0,,
+7320,Araneidae,Cyrtophora,sp. (OTU0410),2511309,,Unknown,Female,2018-10-25,Madagascar,8,0.303,0.059,9.28,2.01,1.47,0.01,35.6,8.3,,,,33.0,51.8,2.8,1.2,0.03,,,
+101,Araneidae,Nephila,pilipes,299642,urn:lsid:nmbe.ch:spidersp:013960,Unknown,Female,2014-12-08,Japan,,0.292,0.04,7.0,2.5,1.72,0.33,41.8,6.8,,,,26.0,39.6,10.4,2.75,0.09,,,
+2658,Araneidae,Poltys,columnaris,2337615,urn:lsid:nmbe.ch:spidersp:016947,Unknown,Female,2015-10-20,Japan,6,0.292,0.02,19.1,5.6,2.4,0.05,20.9,1.1,247.0,292.0,314.0,27.0,58.8,6.4,3.6,0.13,7.8,41.9,10.1
+5816,Araneidae,Larinia,argiopiformis,1112526,urn:lsid:nmbe.ch:spidersp:016286,Unknown,Female,2017-07-11,Japan,12,0.286,0.117,9.92,1.15,2.45,0.52,27.2,5.5,212.0,276.0,297.0,8.0,43.1,3.7,0.56,0.03,7.1,,
+846,Araneidae,Argiope,amoena,216270,urn:lsid:nmbe.ch:spidersp:015345,Unknown,Female,2015-05-24,Japan,,0.286,0.093,15.6,4.38,2.2,0.75,23.7,3.6,220.0,274.0,292.0,15.0,31.5,14.8,2.08,0.32,5.4,,
+7440,Araneidae,Trichonephila,inaurata,222470,urn:lsid:nmbe.ch:spidersp:013953,Unknown,Female,2018-10-29,Madagascar,33,0.285,0.041,14.6,1.3,1.73,0.07,27.2,3.2,229.0,281.0,300.0,27.0,51.6,1.0,3.92,0.06,5.7,44.8,3.7
+7438,Araneidae,Caerostris,darwini,1538125,urn:lsid:nmbe.ch:spidersp:043500,Unknown,Female,2018-10-29,Madagascar,,0.284,0.08,8.73,0.76,1.17,0.14,42.8,6.9,212.0,278.0,298.0,30.0,29.6,2.0,3.31,0.1,6.1,45.0,4.7
+6713,Araneidae,Eriophora,transmarina,2115798,urn:lsid:nmbe.ch:spidersp:015889,Unknown,Male,2017-10-30,Australia,12,0.273,0.072,13.7,1.31,1.93,0.36,25.6,3.0,223.0,285.0,302.0,19.0,78.7,2.9,1.43,0.03,3.4,39.9,7.1
+5564,Araneidae,Araneus,sp. (OTU0080),2507252,,Unknown,Unknown,2017-06-10,China,,0.267,0.136,4.61,1.13,1.97,0.19,31.3,11.9,263.0,297.0,311.0,12.0,70.2,10.7,0.35,0.03,2.1,,
+6756,Sparassidae,Heteropoda,sp. 1,,,Unknown,Male,2017-10-31,Australia,,0.267,0.055,26.8,5.2,1.88,0.23,27.1,5.3,,,,,65.3,10.1,0.36,0.02,,36.7,4.9
+2918,Araneidae,Herennia,sp. 1,,,Unknown,Female,2015-03-03,Malaysia,,0.262,0.109,12.3,10.3,1.84,0.49,26.4,2.7,,,,24.0,50.1,18.3,1.47,0.21,,,
+7300,Araneidae,Caerostris,darwini,1538125,urn:lsid:nmbe.ch:spidersp:043500,Unknown,Female,2018-10-25,Madagascar,18,0.257,0.046,10.6,0.47,1.21,0.11,35.3,3.4,216.0,278.0,297.0,43.0,36.1,1.0,4.13,0.06,5.8,41.5,2.4
+80,Araneidae,Parawixia,dehaani,2337571,urn:lsid:nmbe.ch:spidersp:016893,Unknown,Unknown,2015-03-02,Malaysia,,0.252,0.086,5.8,3.5,1.34,0.44,40.0,11.9,274.0,294.0,307.0,17.0,41.6,5.0,3.14,0.21,4.3,,
+3463,Uloboridae,Octonoba,varians,299643,urn:lsid:nmbe.ch:spidersp:006309,Unknown,Female,2016-05-13,Japan,5,0.25,0.086,16.8,3.9,2.12,0.32,20.2,4.8,,,,,52.4,15.7,0.76,0.08,,,
+7302,Araneidae,Nephilingis,livida,2511332,urn:lsid:nmbe.ch:spidersp:043939,Unknown,Female,2018-10-25,Madagascar,25,0.25,0.057,13.1,1.6,1.9,0.2,23.7,2.9,236.0,292.0,309.0,30.0,51.9,6.2,3.96,0.19,4.6,27.2,9.0
+4683,Araneidae,Trichonephila,clavata,70342,urn:lsid:nmbe.ch:spidersp:013940,Unknown,Female,2016-11-02,China,,0.246,0.024,15.7,3.08,2.22,0.15,21.5,1.3,,,,15.0,42.6,4.9,2.26,0.06,,46.0,1.2
+65,Araneidae,Argiope,aemula,332528,urn:lsid:nmbe.ch:spidersp:015339,Unknown,Female,2014-12-08,Japan,,0.245,0.094,6.5,1.4,1.74,0.8,32.7,7.4,,,,,37.2,17.1,1.89,0.18,,,
+6787,Theridiidae,Cryptachaea,gigantipes,2337375,urn:lsid:nmbe.ch:spidersp:008392,Unknown,Female,2017-10-31,Australia,7,0.243,0.065,14.0,5.15,2.04,0.32,19.7,2.1,,,,,58.0,10.7,0.41,0.04,,,
+5286,Araneidae,Eriovixia,poonaensis,1750731,urn:lsid:nmbe.ch:spidersp:015900,Unknown,Female,2017-04-17,Malaysia,,0.241,0.059,12.8,2.34,1.56,0.13,27.6,6.2,216.0,279.0,278.0,8.0,65.4,8.7,0.47,0.03,7.5,,
+4426,Araneidae,Araneus,mitificus,1662246,urn:lsid:nmbe.ch:spidersp:015032,Unknown,Female,2016-09-28,Japan,8,0.239,0.099,9.01,3.46,1.05,0.29,34.3,10.1,224.0,277.0,298.0,16.0,39.5,9.1,0.68,0.04,4.8,,
+5842,Clubionidae,Clubiona,vigil,2337360,urn:lsid:nmbe.ch:spidersp:024821,Unknown,Female,2017-07-12,Japan,11,0.233,0.082,20.3,5.0,3.33,0.74,12.7,2.0,,,,,43.2,7.9,0.48,0.04,,,
+6193,Agelenidae,Agelena,labyrinthica,286032,urn:lsid:nmbe.ch:spidersp:020860,Unknown,Female,2017-08-09,Japan,,0.232,0.037,18.6,3.11,2.31,0.23,21.7,4.6,218.0,290.0,307.0,9.0,59.8,8.7,0.32,0.01,11.2,,
+328,Araneidae,Araneus,sp. 2,,,Unknown,Male,2014-10-09,Japan,,0.231,0.108,10.2,6.7,1.35,0.56,28.7,4.6,,,,,34.7,13.4,1.02,0.14,,,
+7439,Araneidae,Caerostris,darwini,1538125,urn:lsid:nmbe.ch:spidersp:043500,Unknown,Female,2018-10-29,Madagascar,12,0.229,0.033,11.7,1.25,1.46,0.1,25.2,3.4,199.0,268.0,290.0,31.0,42.5,1.2,3.44,0.03,7.1,43.9,4.4
+6767,Arkyidae,Arkys,sp. (OTU0789),2337315,,Unknown,Unknown,2017-10-31,Australia,,0.226,0.074,9.59,1.49,1.51,0.13,25.4,5.8,,,,,45.1,8.0,0.55,0.04,,,
+5224,Tetragnathidae,Orsinome,sp. (OTU0371),2337537,,Unknown,Female,2017-04-16,Malaysia,8,0.225,0.04,7.96,0.4,1.76,0.08,24.7,4.3,243.0,279.0,296.0,9.0,38.2,4.1,0.69,0.02,6.6,,
+714,Araneidae,Araneus,ventricosus,182803,urn:lsid:nmbe.ch:spidersp:015279,Unknown,Unknown,2015-05-11,Japan,,0.223,0.059,9.86,1.87,1.75,0.39,28.4,5.0,227.0,284.0,303.0,22.0,30.2,6.3,3.05,0.36,8.4,,
+7354,Araneidae,Gasteracantha,sp. (OTU0635),2511311,,Unknown,Female,2018-10-25,Madagascar,,0.223,0.058,10.2,1.18,1.3,0.05,26.3,6.8,235.0,284.0,304.0,22.0,42.3,5.4,1.78,0.14,5.8,37.6,4.0
+2004,Araneidae,Nephila,pilipes,299642,urn:lsid:nmbe.ch:spidersp:013960,Unknown,Female,2015-09-07,Malaysia,,0.221,0.114,12.2,1.8,1.14,0.22,30.2,9.6,241.0,291.0,309.0,22.0,49.1,2.0,3.25,0.06,5.1,,
+7298,Araneidae,Caerostris,darwini,1538125,urn:lsid:nmbe.ch:spidersp:043500,Unknown,Female,2018-10-25,Madagascar,15,0.217,0.084,8.21,1.02,1.15,0.23,30.5,6.2,212.0,275.0,296.0,28.0,38.0,1.6,3.47,0.11,4.8,45.5,3.8
+5996,Araneidae,Nuctenea,umbratica,1872065,urn:lsid:nmbe.ch:spidersp:016784,Unknown,Female,2017-07-23,United Kingdom,,0.216,0.069,28.6,1.7,2.21,0.36,15.5,4.8,222.0,277.0,299.0,34.0,38.3,6.3,0.43,0.04,6.6,,
+3590,Araneidae,Plebs,sachalinensis,2337611,urn:lsid:nmbe.ch:spidersp:015887,Unknown,Female,2016-05-19,Japan,5,0.215,0.054,8.11,1.27,2.12,0.34,19.8,2.3,,,,,51.8,10.7,0.41,0.06,,,
+6677,Araneidae,Backobourkia,brouni,2337322,urn:lsid:nmbe.ch:spidersp:043116,Unknown,Unknown,2017-10-29,Australia,8,0.212,0.104,5.77,1.65,1.6,0.5,25.6,5.3,,,,,80.0,13.5,0.64,0.05,,,
+4916,Araneidae,Argiope,sp. (OTU0362),2337308,,Unknown,Female,2017-01-24,India,13,0.212,0.055,7.16,2.53,1.52,0.27,31.4,3.6,241.0,287.0,305.0,15.0,33.8,2.1,2.05,0.03,7.6,45.2,14.3
+6788,Theridiidae,Latrodectus,hasselti,256736,urn:lsid:nmbe.ch:spidersp:007810,Unknown,Female,2017-10-31,Australia,,0.212,0.066,15.1,4.07,1.99,0.35,17.9,3.6,216.0,279.0,301.0,22.0,58.9,10.7,1.37,0.04,6.5,16.2,5.1
+5358,Theridiidae,Meotipa,sp. (OTU0609),2337478,,Unknown,Female,2017-04-17,Malaysia,6,0.21,0.116,10.2,1.69,1.81,0.34,19.8,6.4,191.0,234.0,279.0,7.0,45.9,8.9,0.45,0.03,4.9,,
+1486,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Unknown,2014-10-05,Japan,,0.207,0.088,10.6,1.3,1.5,0.53,25.5,3.2,,,,,69.0,13.2,0.87,0.07,,,
+7041,Araneidae,Poltys,illepidus,329715,urn:lsid:nmbe.ch:spidersp:016958,Unknown,Female,2017-12-09,Japan,11,0.206,0.033,7.14,1.61,1.5,0.15,25.9,1.8,235.0,286.0,302.0,30.0,41.2,3.6,2.2,0.14,9.0,43.2,7.4
+6949,Araneidae,Arachnura,melanura,1538134,urn:lsid:nmbe.ch:spidersp:014645,Unknown,Female,2017-12-07,Japan,13,0.204,0.101,10.1,1.58,1.91,0.26,21.9,8.5,209.0,265.0,288.0,36.0,50.1,6.9,0.46,0.03,7.0,24.2,5.3
+2214,Araneidae,Neoscona,nautica,258338,urn:lsid:nmbe.ch:spidersp:016729,Unknown,Female,2015-09-13,Japan,11,0.203,0.032,9.4,2.73,1.34,0.17,29.2,2.1,205.0,261.0,289.0,28.0,41.3,5.6,1.18,0.04,5.2,,
+6783,Deinopidae,Deinopis,sp. (OTU0719),2337388,,Unknown,Male,2017-10-31,Australia,16,0.203,0.048,31.2,7.2,2.98,0.38,12.9,2.5,,,,,53.0,5.9,0.49,0.02,,37.8,4.5
+6796,Araneidae,Argiope,keyserlingi,332532,urn:lsid:nmbe.ch:spidersp:015377,Unknown,Female,2017-10-31,Australia,9,0.202,0.046,11.6,1.08,1.59,0.05,19.9,4.6,214.0,277.0,299.0,22.0,42.3,3.9,0.66,0.03,9.8,33.4,5.4
+2664,Araneidae,Cyrtophora,ikomosanensis,891969,urn:lsid:nmbe.ch:spidersp:043614,Unknown,Female,2015-10-21,Japan,19,0.198,0.043,16.6,5.3,1.18,0.27,25.0,4.0,259.0,291.0,307.0,15.0,28.4,3.9,2.07,0.16,3.6,10.6,1.2
+3964,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Female,2016-07-04,United States,7,0.196,0.045,9.12,2.02,1.35,0.25,24.8,2.5,,,,12.0,40.5,4.0,1.32,0.03,,,
+2862,Araneidae,Gasteracantha,kuhli,216277,urn:lsid:nmbe.ch:spidersp:016031,Unknown,Female,2015-03-02,Malaysia,,0.195,0.043,6.16,0.58,1.01,0.21,36.2,6.4,,,,15.0,39.1,13.4,2.38,0.3,,,
+2376,Uloboridae,Hyptiotes,affinis,2337442,urn:lsid:nmbe.ch:spidersp:006218,Unknown,Female,2015-09-27,Japan,4,0.195,0.064,9.71,3.2,1.45,0.3,27.4,5.3,,,,19.0,53.7,9.8,0.86,0.07,,,
+5595,Araneidae,Araneus,sp. (OTU0080),2507252,,Unknown,Unknown,2017-06-11,China,8,0.194,0.068,6.57,1.02,1.66,0.18,27.4,7.2,,,,,44.7,5.9,0.58,0.03,,,
+234,Thomisidae,Oxytate,striatipes,1112455,urn:lsid:nmbe.ch:spidersp:030816,Unknown,Male,2014-10-19,Japan,,0.193,0.063,15.3,5.4,1.43,0.5,21.4,5.5,,,,,53.8,8.5,0.94,0.05,,,
+4211,Theridiidae,Parasteatoda,angulithorax,2337565,urn:lsid:nmbe.ch:spidersp:006749,Unknown,Female,2016-08-04,Japan,4,0.192,0.078,6.59,1.96,2.18,0.74,20.8,5.0,,,,12.0,77.0,11.9,0.58,0.04,,,
+686,Araneidae,Araneus,ventricosus,182803,urn:lsid:nmbe.ch:spidersp:015279,Unknown,Unknown,2015-05-11,Japan,,0.189,0.08,6.31,1.4,1.24,0.3,31.9,6.7,254.0,291.0,308.0,12.0,37.1,7.5,3.51,0.31,7.0,,
+5352,Uloboridae,Miagrammopes,sp. (OTU0063),2337487,,Unknown,Female,2017-04-17,Malaysia,10,0.188,0.039,3.36,1.22,1.1,0.11,26.3,9.2,207.0,271.0,295.0,5.0,37.2,4.5,0.8,0.04,4.0,5.2,5.1
+3371,Salticidae,Carrhotus,xanthogramma,1112393,urn:lsid:nmbe.ch:spidersp:032635,Unknown,Female,2016-05-12,Japan,7,0.188,0.072,16.9,1.2,1.91,0.39,24.1,7.4,,,,7.0,81.3,26.7,0.49,0.04,,,
+4545,Araneidae,Araneus,uyemurai,1112386,urn:lsid:nmbe.ch:spidersp:015275,Unknown,Female,2016-10-12,Japan,5,0.187,0.018,9.75,0.52,1.05,0.13,26.8,0.5,223.0,283.0,303.0,19.0,47.8,2.7,2.75,0.1,1.5,,
+6325,Theridiidae,Argyrodes,kumadai,1529484,urn:lsid:nmbe.ch:spidersp:007075,Unknown,Female,2017-09-12,Japan,,0.185,0.031,10.3,1.74,1.52,0.11,23.6,4.9,266.0,298.0,319.0,,51.3,6.0,0.46,0.02,12.9,,
+7004,Theridiidae,Rhomphaea,labiata,2337631,urn:lsid:nmbe.ch:spidersp:007076,Unknown,Female,2017-12-08,Japan,,0.183,0.051,13.3,1.45,1.84,0.18,19.0,3.1,267.0,288.0,306.0,15.0,57.0,6.4,0.43,0.02,11.1,,
+7422,Araneidae,Caerostris,sp. 1,,,Unknown,Male,2018-10-27,Madagascar,7,0.182,0.057,9.81,1.8,1.56,0.17,21.0,2.7,,,,19.0,57.8,4.8,1.06,0.04,,34.3,4.0
+4938,Araneidae,Argiope,sp. 2,,,Unknown,Female,2017-01-24,India,9,0.182,0.046,6.67,3.06,0.86,0.1,36.0,6.8,,,,10.0,43.7,4.8,1.14,0.03,,,
+213,Araneidae,Cyclosa,octotuberculata,1112407,urn:lsid:nmbe.ch:spidersp:015669,Unknown,Unknown,2014-10-19,Japan,,0.182,0.058,8.37,2.8,1.16,0.34,28.0,5.5,232.0,309.0,354.0,,38.2,11.4,1.16,0.09,3.1,,
+3388,Linyphiidae,Turinyphia,yunohamensis,2337803,urn:lsid:nmbe.ch:spidersp:013148,Unknown,Female,2016-05-12,Japan,4,0.181,0.052,9.35,2.69,1.28,0.15,18.9,4.8,,,,5.0,38.7,9.8,0.75,0.06,,,
+3541,Theridiidae,Parasteatoda,culicivora,1112456,urn:lsid:nmbe.ch:spidersp:006770,Unknown,Female,2016-05-18,Japan,4,0.181,0.042,16.6,4.2,1.84,0.36,17.9,2.2,,,,2.0,88.5,19.2,0.57,0.06,,,
+7303,Araneidae,Nephilingis,livida,2511332,urn:lsid:nmbe.ch:spidersp:043939,Unknown,Female,2018-10-25,Madagascar,25,0.181,0.052,8.78,2.15,1.63,0.17,22.5,5.6,223.0,282.0,303.0,33.0,45.4,6.0,3.86,0.2,4.9,,
+7322,Araneidae,Cyrtophora,sp. (OTU0410),2511309,,Unknown,Female,2018-10-25,Madagascar,10,0.18,0.074,16.1,2.38,1.68,0.1,17.6,6.1,243.0,299.0,319.0,43.0,53.6,4.5,1.73,0.08,4.7,7.8,2.9
+2795,Araneidae,Argiope,aemula,332528,urn:lsid:nmbe.ch:spidersp:015339,Unknown,Female,2015-11-20,Japan,18,0.179,0.035,11.7,1.9,1.48,0.28,22.7,0.9,246.0,288.0,306.0,20.0,38.3,9.1,4.55,0.07,7.3,48.4,10.1
+77,Araneidae,Nephilengys,malabarensis,593433,urn:lsid:nmbe.ch:spidersp:013993,Unknown,Female,2015-03-02,Malaysia,,0.179,0.029,6.3,0.8,1.04,0.1,28.9,2.3,260.0,296.0,311.0,13.0,42.3,3.6,5.58,0.24,4.4,,
+7392,Araneidae,Gen.,sp. (OTU0673),2511324,,Unknown,Female,2018-10-26,Madagascar,13,0.176,0.035,11.1,1.41,1.64,0.23,21.5,1.1,,,,,40.2,2.7,1.47,0.03,,,
+5517,Araneidae,Araneus,seminiger,2175613,urn:lsid:nmbe.ch:spidersp:015191,Unknown,Female,2017-05-25,Japan,14,0.175,0.059,6.85,1.22,0.98,0.1,32.9,6.4,229.0,284.0,303.0,19.0,33.4,0.5,7.95,0.07,10.4,45.8,3.3
+2745,Araneidae,Cyclosa,ginnaga,2337381,urn:lsid:nmbe.ch:spidersp:015623,Unknown,Female,2015-11-19,Japan,7,0.174,0.06,16.4,3.5,1.87,0.19,18.7,6.0,,,,,66.8,9.1,0.33,0.02,,,
+7421,Araneidae,Caerostris,extrusa,172846,urn:lsid:nmbe.ch:spidersp:015477,Unknown,Female,2018-10-27,Madagascar,8,0.172,0.076,8.91,1.29,1.31,0.19,23.5,5.5,,,,23.0,45.3,2.1,1.45,0.04,,35.2,11.1
+3799,Tetragnathidae,Leucauge,argyra,472971,urn:lsid:nmbe.ch:spidersp:013682,Unknown,Female,2016-06-30,United States,9,0.171,0.057,11.9,2.4,1.19,0.25,26.3,5.6,,,,12.0,44.3,4.2,1.37,0.05,,,
+2891,Araneidae,Trichonephila,antipodiana,,urn:lsid:nmbe.ch:spidersp:013938,Unknown,Female,2015-03-02,Malaysia,,0.17,0.026,4.71,1.5,0.55,0.09,49.9,7.5,246.0,287.0,304.0,16.0,36.2,4.3,6.29,0.08,5.0,,
+6502,Araneidae,Trichonephila,clavata,70342,urn:lsid:nmbe.ch:spidersp:013940,Unknown,Female,2017-10-05,Japan,,0.169,0.039,11.8,0.82,1.51,0.1,19.2,3.2,236.0,284.0,301.0,,50.7,2.6,3.03,0.07,7.4,,
+6851,Thomisidae,Stephanopis,cambridgei,2003132,urn:lsid:nmbe.ch:spidersp:031126,Unknown,Female,2017-11-05,Australia,,0.168,0.052,25.1,5.4,2.49,0.05,14.5,4.1,,,,,65.5,8.8,0.4,0.03,,,
+6229,Araneidae,Cyrtarachne,nagasakiensis,386110,urn:lsid:nmbe.ch:spidersp:015776,Unknown,Female,2017-08-22,Japan,,0.168,0.078,8.54,1.64,1.09,0.11,30.5,12.5,201.0,263.0,290.0,16.0,42.9,3.7,1.52,0.04,10.3,,
+5290,Tetragnathidae,Leucauge,tessellata,521417,urn:lsid:nmbe.ch:spidersp:013820,Unknown,Female,2017-04-17,Malaysia,7,0.167,0.025,15.1,2.09,1.91,0.14,13.2,3.4,201.0,270.0,291.0,7.0,44.8,8.8,0.42,0.04,5.1,,
+5659,Theridiidae,Rhomphaea,labiata,2337631,urn:lsid:nmbe.ch:spidersp:007076,Unknown,Female,2017-06-27,Japan,8,0.167,0.042,11.0,3.02,1.7,0.17,18.0,2.9,,,,,42.5,4.4,0.57,0.02,,,
+7441,Araneidae,Trichonephila,inaurata,222470,urn:lsid:nmbe.ch:spidersp:013953,Unknown,Female,2018-10-29,Madagascar,38,0.166,0.022,11.1,2.15,1.35,0.18,21.1,1.3,235.0,285.0,304.0,24.0,47.5,9.7,6.69,0.63,5.8,43.3,3.6
+7324,Araneidae,Cyrtophora,sp. (OTU0410),2511309,,Unknown,Female,2018-10-25,Madagascar,10,0.165,0.042,16.1,1.7,1.54,0.13,16.9,2.5,239.0,284.0,304.0,42.0,53.8,3.9,1.92,0.08,4.6,6.0,2.3
+3366,Araneidae,Cyclosa,octotuberculata,1112407,urn:lsid:nmbe.ch:spidersp:015669,Unknown,Female,2016-05-12,Japan,9,0.165,0.045,8.85,1.35,1.34,0.17,19.4,3.1,213.0,253.0,295.0,,42.7,13.0,0.97,0.12,5.9,,
+4523,Pimoidae,Weintrauboa,contortipes,2337700,urn:lsid:nmbe.ch:spidersp:010992,Unknown,Female,2016-10-11,Japan,6,0.165,0.042,10.3,1.03,1.39,0.17,20.3,3.4,,,,,58.7,8.9,0.85,0.08,,,
+6843,Araneidae,Eriophora,pustulosa,693724,urn:lsid:nmbe.ch:spidersp:015885,Unknown,Female,2017-11-05,Australia,,0.165,0.052,15.3,2.12,1.41,0.19,18.1,3.7,212.0,279.0,300.0,21.0,58.4,9.5,0.57,0.03,10.0,4.2,1.5
+2779,Araneidae,Araneus,seminiger,2175613,urn:lsid:nmbe.ch:spidersp:015191,Unknown,Unknown,2015-11-19,Japan,7,0.165,0.035,9.5,2.4,1.31,0.26,25.1,5.9,,,,19.0,31.6,10.3,1.63,0.27,,27.3,4.6
+7610,Zoropsidae,Zoropsis,spinimana,,urn:lsid:nmbe.ch:spidersp:020389,Unknown,Unknown,2019-10-07,Italy,15,0.164,0.051,22.8,3.06,1.65,0.18,16.5,4.0,,,,,43.0,4.6,0.47,0.02,,,
+2670,Araneidae,Thelacantha,brevispina,1508453,urn:lsid:nmbe.ch:spidersp:017085,Unknown,Female,2015-10-21,Japan,7,0.163,0.034,16.4,3.46,1.09,0.2,22.4,5.6,224.0,276.0,296.0,22.0,25.4,2.1,1.03,0.04,7.2,46.8,4.7
+4023,Araneidae,Neoscona,punctigera,1112444,urn:lsid:nmbe.ch:spidersp:016743,Unknown,Unknown,2016-07-13,Japan,6,0.162,0.054,4.25,1.48,1.08,0.15,32.7,6.2,,,,,35.1,1.9,1.85,0.05,,,
+324,Araneidae,Araniella,yaginumai,1112389,urn:lsid:nmbe.ch:spidersp:038307,Unknown,Unknown,2014-10-09,Japan,,0.161,0.078,11.6,3.8,1.2,0.49,24.5,3.6,,,,,51.5,12.7,1.2,0.08,,,
+2382,Tetragnathidae,Zhinu,reticuloides,2337810,urn:lsid:nmbe.ch:spidersp:013894,Unknown,Female,2015-09-27,Japan,6,0.161,0.062,9.45,0.52,1.1,0.02,22.3,10.2,,,,22.0,49.5,14.6,0.7,0.05,,,
+6795,Tetragnathidae,Leucauge,dromedaria,2337455,urn:lsid:nmbe.ch:spidersp:013717,Unknown,Female,2017-10-31,Australia,8,0.161,0.024,17.3,6.6,2.3,0.14,13.3,2.9,202.0,266.0,294.0,,41.5,9.1,0.52,0.05,12.5,,
+4913,Psechridae,Psechrus,sp. (OTU1056),2337622,,Unknown,Unknown,2017-01-24,India,18,0.161,0.093,9.19,3.16,1.86,0.41,16.8,6.1,219.0,285.0,308.0,24.0,42.4,5.3,0.52,0.03,7.6,11.2,2.6
+1841,Araneidae,Araneus,marmoreus,336584,urn:lsid:nmbe.ch:spidersp:015005,Unknown,Female,2015-08-26,Japan,10,0.16,0.026,21.9,1.7,2.37,0.08,15.0,2.6,230.0,285.0,303.0,20.0,56.4,13.4,2.34,0.31,7.9,50.6,2.4
+4992,Araneidae,Argiope,sp. (OTU0362),2337308,,Unknown,Female,2017-01-25,India,10,0.16,0.049,5.85,0.31,1.32,0.16,24.8,5.8,,,,16.0,37.6,1.8,2.78,0.09,,,
+4371,Araneidae,Gasteracantha,kuhli,216277,urn:lsid:nmbe.ch:spidersp:016031,Unknown,Female,2016-09-07,Japan,5,0.159,0.021,6.59,0.96,1.21,0.09,24.5,2.4,,,,18.0,39.3,5.3,1.52,0.07,,,
+3910,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Female,2016-07-02,United States,7,0.159,0.013,17.3,3.92,1.65,0.17,15.9,2.6,198.0,264.0,292.0,10.0,44.7,5.5,1.67,0.13,11.7,,
+1485,Araneidae,Araneus,mitificus,1662246,urn:lsid:nmbe.ch:spidersp:015032,Unknown,Unknown,2014-10-05,Japan,,0.158,0.058,7.19,3.4,0.87,0.15,32.0,8.3,252.0,300.0,320.0,16.0,30.5,7.9,1.97,0.24,3.5,,
+226,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Female,2014-10-19,Japan,,0.158,0.074,8.9,3.5,1.38,0.33,21.0,5.5,,,,,61.3,15.2,0.61,0.08,,,
+5803,Araneidae,Cyrtarachne,nagasakiensis,386110,urn:lsid:nmbe.ch:spidersp:015776,Unknown,Female,2017-07-11,Japan,5,0.157,0.034,9.52,1.63,1.53,0.07,19.2,4.0,205.0,275.0,295.0,,69.4,11.4,0.33,0.03,5.8,,
+7608,Zoropsidae,Zoropsis,spinimana,,urn:lsid:nmbe.ch:spidersp:020389,Unknown,Unknown,2019-10-07,Italy,17,0.157,0.007,10.8,1.49,1.22,0.07,22.6,1.8,,,,34.0,41.5,5.8,0.45,0.03,,,
+5602,Araneidae,Araneus,sp. (OTU0080),2507252,,Unknown,Unknown,2017-06-11,China,,0.157,0.084,5.86,1.94,1.79,0.41,20.3,5.4,,,,,53.4,7.1,0.43,0.02,,,
+1495,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Unknown,2014-10-05,Japan,,0.157,0.052,7.54,2.7,1.04,0.28,27.2,4.9,204.0,256.0,288.0,,32.9,8.5,1.75,0.29,1.2,,
+144,Araneidae,Thelacantha,brevispina,1508453,urn:lsid:nmbe.ch:spidersp:017085,Unknown,Female,2015-03-02,Malaysia,,0.157,0.099,4.5,2.3,0.83,0.42,35.5,8.0,267.0,294.0,309.0,16.0,26.9,16.9,3.0,0.91,4.5,,
+5478,Araneidae,Acusilas,coccineus,1662254,urn:lsid:nmbe.ch:spidersp:014455,Unknown,Female,2017-05-24,Japan,11,0.156,0.026,13.1,1.86,2.06,0.25,16.6,1.6,216.0,278.0,300.0,,43.5,4.1,0.57,0.03,7.0,,
+5281,Araneidae,Singa,perpolita,2337647,urn:lsid:nmbe.ch:spidersp:017059,Unknown,Female,2017-04-17,Malaysia,5,0.155,0.044,3.41,0.74,1.63,0.16,24.4,3.0,241.0,288.0,307.0,,77.0,19.7,0.38,0.02,7.7,,
+136,Tetragnathidae,Leucauge,sp. 1,,,Unknown,Female,2015-03-02,Malaysia,,0.155,0.092,9.3,3.5,0.82,0.2,34.4,7.7,,,,21.0,33.4,12.3,2.06,0.2,,,
+6700,Araneidae,Eriophora,sp. (OTU0926),2337405,,Unknown,Female,2017-10-30,Australia,15,0.154,0.032,5.76,0.17,1.04,0.29,24.0,8.8,217.0,276.0,298.0,16.0,50.8,8.2,0.42,0.02,5.4,45.7,5.6
+4440,Araneidae,Araneus,variegatus,1112387,urn:lsid:nmbe.ch:spidersp:015276,Unknown,Female,2016-09-29,Japan,11,0.154,0.044,4.85,1.52,1.2,0.11,27.3,3.6,216.0,285.0,300.0,12.0,42.1,8.0,1.79,0.04,2.2,,
+5227,Tetragnathidae,Orsinome,sp. (OTU0371),2337537,,Unknown,Unknown,2017-04-16,Malaysia,4,0.154,0.028,6.4,1.79,1.66,0.27,20.5,4.0,,,,,44.9,9.6,0.47,0.04,,,
+6323,Araneidae,Cyclosa,omonaga,1933405,urn:lsid:nmbe.ch:spidersp:015675,Unknown,Female,2017-09-12,Japan,7,0.153,0.073,5.35,0.98,1.33,0.47,27.1,5.8,,,,,41.6,4.6,0.62,0.05,,,
+3801,Araneidae,Micrathena,sagittata,1481434,urn:lsid:nmbe.ch:spidersp:016617,Unknown,Female,2016-06-30,United States,,0.153,0.038,9.54,1.9,1.1,0.08,24.5,7.9,,,,13.0,32.1,7.9,1.67,0.06,,,
+3524,Araneidae,Araneus,pentagrammicus,2337294,urn:lsid:nmbe.ch:spidersp:015102,Unknown,Female,2016-05-17,Japan,10,0.153,0.043,8.52,1.32,1.21,0.19,23.4,4.6,248.0,280.0,296.0,21.0,35.0,4.6,1.89,0.07,7.7,,
+5104,Araneidae,Cyclosa,alba,345691,urn:lsid:nmbe.ch:spidersp:015564,Unknown,Female,2017-03-22,Japan,3,0.153,0.067,2.38,0.7,1.25,0.24,29.2,6.0,,,,5.0,60.2,10.3,0.6,0.04,,,
+3875,Araneidae,Mecynogea,lemniscata,329906,urn:lsid:nmbe.ch:spidersp:016398,Unknown,Unknown,2016-07-02,United States,6,0.152,0.005,7.76,2.11,1.4,0.16,17.6,3.2,,,,9.0,28.4,7.4,0.75,0.03,,,
+5480,Segestriidae,Ariadna,lateralis,2337312,urn:lsid:nmbe.ch:spidersp:004254,Unknown,Female,2017-05-24,Japan,13,0.152,0.012,37.0,9.5,2.46,0.33,8.6,1.3,,,,,46.7,9.9,0.54,0.06,,,
+7241,Pholcidae,Pholcus,phalangioides,6932,urn:lsid:nmbe.ch:spidersp:003744,Unknown,Female,2018-07-20,Japan,,0.152,0.051,9.1,1.5,1.28,0.22,21.9,5.5,268.0,299.0,315.0,8.0,70.0,6.7,0.78,0.03,14.2,,
+143,Araneidae,Gasteracantha,sp. 1,,,Unknown,Female,2015-03-02,Malaysia,,0.151,0.119,4.5,1.5,0.83,0.46,31.8,13.0,254.0,286.0,302.0,15.0,25.7,5.2,3.46,0.17,4.8,,
+2859,Araneidae,Argiope,sp. 1,,,Unknown,Female,2015-03-02,Malaysia,,0.151,0.027,6.75,1.6,1.32,0.24,26.3,3.1,,,,,45.8,16.2,1.79,0.14,,,
+292,Araneidae,Argiope,bruennichi,94029,urn:lsid:nmbe.ch:spidersp:015356,Unknown,Unknown,2014-10-09,Japan,,0.149,0.045,4.4,0.8,1.15,0.46,30.7,2.6,205.0,255.0,283.0,11.0,28.2,13.3,2.47,0.17,9.9,,
+5556,Araneidae,Neoscona,scylloides,1112446,urn:lsid:nmbe.ch:spidersp:016751,Unknown,Female,2017-06-10,China,7,0.149,0.046,4.92,1.46,1.0,0.09,28.4,5.2,223.0,293.0,311.0,10.0,54.2,8.9,0.45,0.03,2.5,,
+3943,Tetragnathidae,Tetragnatha,sp. (OTU0935),2337675,,Unknown,Female,2016-07-03,United States,11,0.148,0.037,4.89,3.69,1.3,0.14,23.8,3.4,,,,12.0,44.6,10.3,0.79,0.05,,,
+3796,Araneidae,Gasteracantha,cancriformis,472970,urn:lsid:nmbe.ch:spidersp:016007,Unknown,Female,2016-06-30,United States,,0.147,0.048,8.62,1.5,1.03,0.18,26.9,4.3,239.0,289.0,308.0,24.0,31.1,4.8,2.56,0.24,5.6,,
+7426,Araneidae,Acrosomoides,sp. (OTU0988),2511307,,Unknown,Female,2018-10-27,Madagascar,6,0.146,0.041,9.02,0.88,1.02,0.13,26.1,5.2,,,,25.0,33.6,2.0,2.23,0.04,,39.3,5.3
+3477,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Female,2016-05-14,Japan,8,0.144,0.034,9.46,1.49,0.79,0.17,18.8,2.4,,,,10.0,40.1,7.6,2.43,0.17,,39.1,2.2
+7389,Araneidae,Gen.,sp. (OTU0673),2511324,,Unknown,Female,2018-10-26,Madagascar,12,0.144,0.07,12.9,1.65,1.57,0.25,17.7,5.6,232.0,286.0,305.0,25.0,38.7,2.6,2.25,0.07,6.3,45.0,4.5
+5828,Mimetidae,Mimetus,testaceus,1112437,urn:lsid:nmbe.ch:spidersp:005784,Unknown,Female,2017-07-11,Japan,5,0.144,0.023,13.6,2.53,2.06,0.22,15.8,2.3,232.0,287.0,305.0,24.0,46.7,5.7,0.44,0.03,6.3,,
+2417,Araneidae,Araneus,pentagrammicus,2337294,urn:lsid:nmbe.ch:spidersp:015102,Unknown,Unknown,2015-09-27,Japan,5,0.144,0.029,8.9,0.95,1.21,0.09,24.3,4.3,189.0,223.0,252.0,19.0,38.1,4.7,1.45,0.06,4.0,,
+5234,Pisauridae,Hygropoda,sp. (OTU0732),2337439,,Unknown,Unknown,2017-04-16,Malaysia,6,0.143,0.01,8.64,1.27,2.5,0.62,15.1,0.8,,,,,63.8,11.2,0.38,0.02,,,
+6327,Araneidae,Cyclosa,japonica,1112403,urn:lsid:nmbe.ch:spidersp:015637,Unknown,Female,2017-09-12,Japan,7,0.143,0.062,17.3,4.1,2.42,0.59,12.3,2.8,212.0,276.0,297.0,25.0,50.4,10.6,0.54,0.04,6.5,,
+199,Theridiidae,Parasteatoda,sp. 1,,,Unknown,Male,2014-10-17,Japan,,0.143,0.054,6.34,3.3,1.04,0.09,26.8,4.2,,,,22.0,53.3,14.0,0.74,0.06,,,
+6849,Araneidae,Plebs,sp. (OTU0517),2337612,,Unknown,Female,2017-11-05,Australia,8,0.142,0.05,8.65,2.09,1.6,0.13,18.9,5.6,,,,,59.7,5.1,0.41,0.02,,,
+7416,Araneidae,Cyrtophora,sp. (OTU0804),2511314,,Unknown,Female,2018-10-27,Madagascar,15,0.142,0.049,14.0,2.25,1.63,0.05,16.5,6.1,222.0,293.0,317.0,28.0,54.3,2.7,2.49,0.06,3.6,,
+3545,Araneidae,Cyclosa,argenteoalba,345692,urn:lsid:nmbe.ch:spidersp:015571,Unknown,Female,2016-05-18,Japan,6,0.142,0.028,15.9,8.5,1.46,0.33,17.9,5.8,,,,,63.1,10.3,0.6,0.04,,,
+6816,Araneidae,Eriophora,pustulosa,693724,urn:lsid:nmbe.ch:spidersp:015885,Unknown,Female,2017-11-04,Australia,6,0.141,0.04,7.61,0.39,1.27,0.21,23.5,0.2,216.0,279.0,297.0,27.0,35.0,4.1,0.82,0.05,6.9,,
+5209,Araneidae,Gea,spinipes,1538127,urn:lsid:nmbe.ch:spidersp:016112,Unknown,Female,2017-04-15,Malaysia,5,0.141,0.025,4.66,0.82,1.54,0.17,21.9,3.8,201.0,273.0,306.0,,48.2,6.4,0.51,0.03,15.1,,
+3798,Araneidae,Micrathena,sagittata,1481434,urn:lsid:nmbe.ch:spidersp:016617,Unknown,Female,2016-06-30,United States,,0.141,0.031,15.5,3.5,1.04,0.1,20.8,5.3,253.0,282.0,296.0,21.0,43.2,9.5,0.95,0.03,4.9,43.9,7.3
+7607,Zoropsidae,Zoropsis,spinimana,,urn:lsid:nmbe.ch:spidersp:020389,Unknown,Unknown,2019-10-07,Italy,17,0.14,0.04,14.7,1.44,1.21,0.14,18.4,4.4,,,,47.0,47.1,3.0,1.49,0.02,,27.4,6.7
+5398,Tetragnathidae,Metleucauge,yunohamensis,1112435,urn:lsid:nmbe.ch:spidersp:013930,Unknown,Female,2017-05-16,Japan,10,0.14,0.017,9.3,0.93,0.97,0.09,19.4,2.5,184.0,266.0,295.0,24.0,53.8,2.0,1.12,0.03,12.0,,
+4734,Theridiidae,Argyrodes,flavescens,202203,urn:lsid:nmbe.ch:spidersp:007044,Unknown,Female,2016-11-07,Japan,4,0.14,0.051,2.44,0.63,1.23,0.17,30.9,7.4,189.0,207.0,261.0,19.0,72.7,9.1,0.65,0.04,3.9,,
+6774,Theridiidae,Steatoda,sp. (OTU0808),2337658,,Unknown,Female,2017-10-31,Australia,9,0.14,0.047,6.31,2.4,1.11,0.13,28.3,7.3,,,,,51.5,7.4,0.49,0.04,,,
+2391,Tetragnathidae,Metleucauge,yunohamensis,1112435,urn:lsid:nmbe.ch:spidersp:013930,Unknown,Unknown,2015-09-27,Japan,6,0.139,0.007,12.9,1.3,1.25,0.23,20.2,3.9,,,,20.0,46.6,11.8,0.54,0.03,,,
+204,Tetragnathidae,Zhinu,reticuloides,2337810,urn:lsid:nmbe.ch:spidersp:013894,Unknown,Unknown,2014-10-17,Japan,,0.139,0.037,8.23,1.5,1.13,0.11,19.8,3.0,,,,,47.3,5.5,1.19,0.08,,,
+1421,Araneidae,Neoscona,scylla,1112445,urn:lsid:nmbe.ch:spidersp:016750,Unknown,Female,2015-06-15,Japan,,0.139,0.063,6.48,3.6,1.01,0.41,26.7,6.1,,,,27.0,41.5,9.2,1.28,0.09,,,
+3883,Araneidae,Larinioides,cornutus,336591,urn:lsid:nmbe.ch:spidersp:016288,Unknown,Female,2016-07-02,United States,14,0.139,0.017,15.4,3.09,1.82,0.12,15.3,1.3,224.0,281.0,300.0,24.0,36.5,0.8,2.84,0.02,9.9,34.1,3.4
+2669,Araneidae,Thelacantha,brevispina,1508453,urn:lsid:nmbe.ch:spidersp:017085,Unknown,Female,2015-10-21,Japan,6,0.138,0.025,8.62,1.2,1.08,0.06,28.0,4.3,198.0,251.0,282.0,26.0,41.6,8.8,1.08,0.05,9.9,,
+314,Araneidae,Gibbaranea,abscissa,2337418,urn:lsid:nmbe.ch:spidersp:016118,Unknown,Male,2014-10-09,Japan,,0.138,0.067,7.36,2.2,0.99,0.29,24.4,4.4,,,,,45.8,7.2,1.08,0.09,,,
+3185,Araneidae,Poltys,columnaris,2337615,urn:lsid:nmbe.ch:spidersp:016947,Unknown,Female,2016-04-14,Japan,8,0.137,0.064,7.88,1.53,0.97,0.15,23.4,8.3,224.0,278.0,296.0,19.0,33.0,1.9,2.16,0.04,8.1,49.5,3.1
+7452,Oxyopidae,Peucetia,sp. (OTU1041),2511316,,Unknown,Female,2018-10-29,Madagascar,20,0.137,0.045,11.5,1.12,1.17,0.13,19.9,4.1,211.0,278.0,298.0,26.0,41.6,1.4,2.8,0.03,6.8,24.9,4.5
+6762,Araneidae,Trichonephila,plumipes,941800,urn:lsid:nmbe.ch:spidersp:013971,Unknown,Female,2017-10-31,Australia,10,0.136,0.019,12.1,3.35,1.44,0.06,18.1,4.1,208.0,268.0,297.0,21.0,48.8,0.0,0.46,0.03,9.0,40.3,5.4
+4912,Araneidae,Nephila,pilipes,299642,urn:lsid:nmbe.ch:spidersp:013960,Unknown,Female,2017-01-24,India,11,0.135,0.079,9.38,4.24,1.17,0.35,19.7,6.6,222.0,280.0,301.0,20.0,55.7,17.6,0.98,0.2,8.4,,
+6755,Araneidae,Trichonephila,plumipes,941800,urn:lsid:nmbe.ch:spidersp:013971,Unknown,Female,2017-10-31,Australia,16,0.135,0.069,7.81,1.38,0.81,0.22,28.2,7.6,233.0,285.0,304.0,19.0,31.9,2.7,1.25,0.04,8.2,8.9,1.1
+5838,Thomisidae,Xysticus,sp. (OTU0096),2337707,,Unknown,Female,2017-07-12,Japan,9,0.135,0.034,13.7,2.94,2.34,0.36,13.0,2.3,197.0,267.0,295.0,,51.4,6.3,0.45,0.03,7.7,,
+6339,Araneidae,Cyclosa,omonaga,1933405,urn:lsid:nmbe.ch:spidersp:015675,Unknown,Female,2017-09-12,Japan,,0.134,0.052,14.6,2.53,1.14,0.09,21.4,8.7,227.0,283.0,300.0,17.0,54.0,4.1,0.46,0.02,11.4,,
+327,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Unknown,2014-10-09,Japan,,0.134,0.06,5.21,2.1,0.87,0.25,27.4,11.2,,,,,41.5,6.8,1.23,0.06,,,
+1794,Araneidae,Cyrtarachne,akirai,1463313,urn:lsid:nmbe.ch:spidersp:046730,Unknown,Female,2015-07-21,Japan,8,0.133,0.025,11.2,5.0,1.12,0.15,19.3,4.4,241.0,285.0,302.0,20.0,37.5,4.2,4.54,0.25,7.2,,
+195,Araneidae,Gen.,sp. 1,,,Unknown,Female,2014-10-17,Japan,,0.133,0.031,6.89,1.4,1.09,0.25,25.0,2.1,,,,,42.2,8.0,0.94,0.06,,,
+2245,Araneidae,Neoscona,punctigera,1112444,urn:lsid:nmbe.ch:spidersp:016743,Unknown,Female,2015-09-13,Japan,13,0.133,0.036,9.01,1.38,1.14,0.16,20.2,2.4,224.0,279.0,301.0,16.0,29.6,4.5,2.18,0.15,2.2,26.2,2.3
+3349,Pisauridae,Dolomedes,yawatai,492292,urn:lsid:nmbe.ch:spidersp:037734,Unknown,Unknown,2016-04-15,Japan,,0.132,0.011,10.7,3.5,1.08,0.12,20.0,1.5,,,,,52.2,15.6,0.82,0.05,,,
+217,Salticidae,Plexippoides,doenitzi,1112547,urn:lsid:nmbe.ch:spidersp:035642,Unknown,Male,2014-10-19,Japan,,0.132,0.033,8.41,1.4,0.77,0.11,25.2,6.0,,,,,51.1,8.7,1.18,0.09,,,
+7305,Araneidae,Nephilingis,livida,2511332,urn:lsid:nmbe.ch:spidersp:043939,Unknown,Female,2018-10-25,Madagascar,25,0.131,0.049,9.93,2.82,1.55,0.16,15.7,4.2,231.0,289.0,307.0,24.0,52.9,3.7,3.51,0.14,5.3,,
+6266,Theridiidae,Episinus,nubilus,1112416,urn:lsid:nmbe.ch:spidersp:007658,Unknown,Female,2017-08-23,Japan,3,0.131,0.061,6.31,1.22,1.7,0.36,18.9,4.7,,,,,82.7,10.3,0.33,0.03,,,
+3830,Araneidae,Trichonephila,clavipes,6915,urn:lsid:nmbe.ch:spidersp:013943,Unknown,Male,2016-07-01,United States,6,0.131,0.036,10.4,2.86,1.56,0.24,17.1,3.2,,,,12.0,58.9,12.6,0.8,0.04,,,
+3835,Theridiidae,Parasteatoda,sp. (OTU0819),2337568,,Unknown,Female,2016-07-01,United States,7,0.131,0.036,10.4,2.86,0.81,0.08,8.9,2.0,209.0,258.0,282.0,24.0,37.2,7.2,2.25,0.25,8.6,,
+2420,Araneidae,Poltys,illepidus,329715,urn:lsid:nmbe.ch:spidersp:016958,Unknown,Female,2015-09-27,Japan,4,0.131,0.03,6.97,0.46,1.36,0.09,19.8,4.0,265.0,283.0,294.0,35.0,43.5,8.6,1.06,0.05,7.0,30.6,2.4
+193,Linyphiidae,Neriene,sp. 1,,,Unknown,Male,2014-10-17,Japan,,0.131,0.073,11.7,7.2,1.13,0.62,57.1,23.8,,,,,53.7,14.0,0.73,0.06,,,
+3857,Araneidae,Neoscona,sp. (OTU0133),2337506,,Unknown,Female,2016-07-01,United States,10,0.13,0.014,6.84,1.52,0.97,0.13,30.8,4.3,248.0,294.0,309.0,22.0,30.6,7.9,2.07,0.41,3.8,,
+319,Araneidae,Araneus,sp. 1,,,Unknown,Unknown,2014-10-09,Japan,,0.129,0.032,6.64,2.3,0.87,0.23,26.8,2.9,189.0,224.0,261.0,,33.6,5.5,1.74,0.09,7.1,,
+2270,Sparassidae,Thelcticopis,severa,1475189,urn:lsid:nmbe.ch:spidersp:029584,Unknown,Female,2015-09-14,Japan,19,0.129,0.033,7.93,1.33,1.32,0.13,21.5,3.2,212.0,269.0,296.0,26.0,35.1,5.0,2.59,0.26,8.4,43.9,7.9
+651,Araneidae,Araneus,ventricosus,182803,urn:lsid:nmbe.ch:spidersp:015279,Unknown,Unknown,2015-05-11,Japan,,0.129,0.063,6.72,1.5,0.62,0.14,28.9,10.6,246.0,288.0,307.0,13.0,48.9,8.1,4.68,0.54,8.3,,
+5477,Pisauridae,Pisaura,lama,1112544,urn:lsid:nmbe.ch:spidersp:019757,Unknown,Female,2017-05-24,Japan,12,0.129,0.052,7.08,0.94,1.37,0.39,18.7,3.6,,,,,69.4,10.1,0.35,0.03,,,
+53,Araneidae,Araneus,amabilis,2337290,urn:lsid:nmbe.ch:spidersp:037655,Unknown,Unknown,2014-12-08,Japan,,0.128,0.032,6.17,0.79,0.92,0.15,25.7,3.7,,,,,41.0,7.8,1.72,0.13,,,
+3848,Oxyopidae,Peucetia,viridans,593451,urn:lsid:nmbe.ch:spidersp:020215,Unknown,Unknown,2016-07-01,United States,9,0.128,0.045,9.24,5.09,1.47,0.42,15.9,3.4,,,,,45.4,24.3,1.15,0.32,,,
+5249,Araneidae,Gea,spinipes,1538127,urn:lsid:nmbe.ch:spidersp:016112,Unknown,Female,2017-04-15,Malaysia,6,0.128,0.035,13.0,1.59,2.17,0.12,13.7,2.7,258.0,282.0,294.0,15.0,48.7,9.7,0.48,0.03,11.5,40.3,8.5
+2792,Araneidae,Araneus,amabilis,2337290,urn:lsid:nmbe.ch:spidersp:037655,Unknown,Female,2015-11-20,Japan,8,0.127,0.038,6.85,2.3,1.03,0.24,25.3,2.4,250.0,295.0,316.0,30.0,31.1,6.5,2.7,0.39,1.9,37.3,4.7
+3959,Araneidae,Metepeira,labyrinthea,472973,urn:lsid:nmbe.ch:spidersp:016515,Unknown,Unknown,2016-07-04,United States,4,0.126,0.042,4.04,1.51,1.26,0.15,20.3,2.5,263.0,292.0,307.0,10.0,61.7,11.3,0.7,0.03,15.6,,
+3313,Tetragnathidae,Tetragnatha,ceylonica,2055959,urn:lsid:nmbe.ch:spidersp:014121,Unknown,Female,2016-04-15,Japan,,0.126,0.068,8.43,4.08,0.91,0.34,21.7,8.1,,,,11.0,37.7,9.6,0.93,0.12,,,
+5024,Araneidae,Neoscona,sp. (OTU1084),2337508,,Unknown,Female,2017-01-25,India,,0.126,0.035,9.24,2.54,1.36,0.35,20.4,3.8,,,,14.0,46.2,46.7,1.08,0.49,,,
+1497,Araneidae,Neoscona,adianta,1112440,urn:lsid:nmbe.ch:spidersp:016689,Unknown,Unknown,2015-07-09,Japan,,0.126,0.072,4.31,1.1,0.71,0.2,28.2,6.2,,,,24.0,35.8,10.2,1.36,0.07,,,
+4910,Araneidae,Cyrtophora,unicolor,1485616,urn:lsid:nmbe.ch:spidersp:015838,Unknown,Male,2017-01-24,India,8,0.126,0.01,7.13,1.53,1.0,0.11,23.2,2.6,,,,,46.1,3.7,2.08,0.11,,,
+4039,Araneidae,Neoscona,scylloides,1112446,urn:lsid:nmbe.ch:spidersp:016751,Unknown,Female,2016-07-14,Japan,11,0.126,0.035,3.21,0.71,0.77,0.24,35.4,4.8,215.0,283.0,301.0,21.0,37.0,7.3,2.85,0.25,3.1,,
+3173,Lycosidae,Piratula,iriomotensis,2337603,urn:lsid:nmbe.ch:spidersp:019082,Unknown,Male,2016-04-14,Japan,3,0.126,0.03,7.89,2.21,0.74,0.17,26.7,5.0,223.0,275.0,296.0,13.0,25.0,6.1,2.43,0.11,3.5,,
+6821,Araneidae,Gen.,sp. (OTU0726),2337815,,Unknown,Female,2017-11-04,Australia,7,0.125,0.068,14.5,5.81,2.27,0.75,13.0,2.7,,,,,44.1,6.6,0.55,0.03,,,
+3546,Sparassidae,Sinopoda,forcipata,2337648,urn:lsid:nmbe.ch:spidersp:029512,Unknown,Male,2016-05-18,Japan,20,0.125,0.042,8.47,1.93,0.74,0.13,24.6,7.1,,,,10.0,36.3,10.8,3.71,0.26,,,
+3878,Mimetidae,Mimetus,sp. (OTU0733),2337491,,Unknown,Female,2016-07-02,United States,7,0.124,0.034,6.77,2.67,1.32,0.19,18.7,2.0,,,,11.0,48.3,11.5,0.9,0.03,,,
+3350,Tetragnathidae,Tylorida,ventralis,1654948,urn:lsid:nmbe.ch:spidersp:014402,Unknown,Female,2016-04-15,Japan,,0.124,0.022,8.39,1.05,1.07,0.15,23.1,2.8,,,,9.0,47.0,16.1,0.71,0.12,,,
+6748,Araneidae,Poecilopachys,australasia,386120,urn:lsid:nmbe.ch:spidersp:016935,Unknown,Female,2017-10-30,Australia,7,0.123,0.003,7.89,1.14,0.95,0.05,23.7,0.8,208.0,268.0,292.0,19.0,51.2,4.2,1.49,0.03,9.4,43.0,6.7
+6084,Tetragnathidae,Metellina,merianae,473146,urn:lsid:nmbe.ch:spidersp:013918,Unknown,Female,2017-07-26,United Kingdom,,0.121,0.036,11.6,4.51,1.43,0.18,16.8,5.7,257.0,283.0,299.0,7.0,40.8,4.2,0.64,0.02,12.0,,
+2311,Araneidae,Cyrtarachne,bufo,386108,urn:lsid:nmbe.ch:spidersp:015747,Unknown,Female,2015-09-15,Japan,7,0.121,0.042,10.3,2.9,0.73,0.12,25.9,4.8,204.0,253.0,283.0,23.0,54.6,6.0,1.23,0.08,8.9,24.0,3.4
+316,Araneidae,Araneus,pinguis,2337295,urn:lsid:nmbe.ch:spidersp:015114,Unknown,Female,2014-10-09,Japan,,0.121,0.036,4.2,0.7,0.99,0.47,53.2,3.7,227.0,286.0,306.0,23.0,38.1,11.3,2.54,0.25,7.7,,
+5612,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Male,2017-06-11,China,3,0.12,0.044,9.67,2.78,1.6,0.15,15.0,4.1,,,,,47.5,7.1,0.54,0.03,,,
+2579,Sparassidae,Heteropoda,venatoria,152925,urn:lsid:nmbe.ch:spidersp:028988,Unknown,Female,2015-10-14,Japan,,0.12,0.031,7.57,1.5,0.75,0.06,27.2,7.2,209.0,267.0,293.0,19.0,36.1,6.5,1.84,0.17,7.8,47.4,7.0
+6965,Araneidae,Hypsosinga,pygmaea,336661,urn:lsid:nmbe.ch:spidersp:016190,Unknown,Female,2017-12-08,Japan,3,0.118,0.019,10.9,4.11,1.45,0.07,18.2,4.4,,,,,46.1,6.7,0.45,0.04,,,
+5654,Araneidae,Eriovixia,sakiedaorum,2337407,urn:lsid:nmbe.ch:spidersp:015903,Unknown,Male,2017-06-27,Japan,3,0.118,0.032,6.53,1.26,1.16,0.14,18.9,3.8,,,,,43.7,6.8,0.54,0.02,,,
+7447,Theridiidae,Latrodectus,geometricus,156851,urn:lsid:nmbe.ch:spidersp:007809,Unknown,Female,2018-10-29,Madagascar,14,0.118,0.026,9.77,1.25,0.97,0.03,19.6,3.2,222.0,288.0,309.0,27.0,45.1,5.8,2.49,0.2,6.0,21.4,2.6
+2057,Araneidae,Herennia,multipuncta,941795,urn:lsid:nmbe.ch:spidersp:039408,Unknown,Female,2015-09-07,Malaysia,,0.117,0.059,12.1,3.9,1.27,0.47,15.4,4.3,214.0,271.0,296.0,20.0,50.8,15.0,2.14,0.36,4.9,40.7,1.7
+5771,Theridiidae,Yunohamella,yunohamensis,2337715,urn:lsid:nmbe.ch:spidersp:008795,Unknown,Female,2017-07-05,Japan,5,0.117,0.025,9.54,2.81,1.37,0.18,14.6,1.8,208.0,276.0,296.0,,43.8,5.1,0.57,0.03,9.0,,
+5502,Cheiracanthiidae,Cheiracanthium,lascivum,2337333,urn:lsid:nmbe.ch:spidersp:023352,Unknown,Unknown,2017-05-24,Japan,10,0.117,0.01,11.1,2.52,1.34,0.03,15.4,0.2,,,,,64.7,12.2,0.37,0.03,,,
+5852,Cheiracanthiidae,Cheiracanthium,japonicum,1112394,urn:lsid:nmbe.ch:spidersp:023343,Unknown,Female,2017-07-12,Japan,11,0.117,0.026,10.1,0.52,1.89,0.24,17.9,1.4,,,,,68.7,10.4,0.36,0.02,,,
+1345,Araneidae,Yaginumia,sia,1112568,urn:lsid:nmbe.ch:spidersp:017156,Unknown,Female,2015-06-15,Japan,8,0.116,0.041,8.79,3.9,0.96,0.23,19.7,3.5,,,,15.0,65.0,10.3,1.19,0.08,,,
+3416,Theridiidae,Takayus,latifolius,1112489,urn:lsid:nmbe.ch:spidersp:008469,Unknown,Female,2016-05-12,Japan,4,0.116,0.053,14.9,6.6,1.45,0.55,14.8,2.6,,,,13.0,34.7,11.4,0.47,0.1,,23.9,0.9
+4382,Theridiidae,Parasteatoda,sp. 2,,,Unknown,Female,2016-09-08,Japan,5,0.115,0.009,3.34,0.74,1.3,0.09,21.7,3.5,,,,18.0,67.6,7.4,0.69,0.04,,,
+198,Theridiidae,Nihonhimea,japonica,2337769,urn:lsid:nmbe.ch:spidersp:006803,Unknown,Female,2014-10-17,Japan,,0.114,0.051,8.82,1.2,0.89,0.14,21.0,5.4,,,,,47.4,7.6,0.88,0.04,,,
+6635,Thomisidae,Phrynarachne,katoi,1112472,urn:lsid:nmbe.ch:spidersp:030978,Unknown,Female,2017-10-13,Japan,11,0.114,0.019,33.5,5.5,2.64,0.14,8.9,1.3,205.0,268.0,297.0,6.0,58.4,7.2,0.43,0.03,9.1,11.5,4.0
+2801,Tetragnathidae,Tetragnatha,nitens,545214,urn:lsid:nmbe.ch:spidersp:014279,Unknown,Female,2015-11-20,Japan,12,0.114,0.04,13.7,1.5,1.35,0.15,16.5,4.5,,,,21.0,36.3,12.8,0.81,0.07,,,
+6544,Theridiidae,Yunohamella,yunohamensis,2337715,urn:lsid:nmbe.ch:spidersp:008795,Unknown,Unknown,2017-10-11,Japan,3,0.112,0.049,13.1,2.8,2.13,0.6,11.2,1.7,,,,,65.7,10.6,0.37,0.02,,,
+3819,Araneidae,Araneus,bicentenarius,29013,urn:lsid:nmbe.ch:spidersp:014742,Unknown,Female,2016-07-01,United States,22,0.112,0.067,7.93,2.7,1.23,0.43,18.4,4.3,243.0,292.0,309.0,23.0,40.8,3.8,5.37,0.13,8.6,55.7,4.5
+1795,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Unknown,2015-07-21,Japan,6,0.112,0.04,11.3,0.8,1.26,0.31,17.2,4.3,198.0,252.0,286.0,25.0,37.0,13.0,1.94,0.35,1.4,,
+6784,Araneidae,Plebs,eburnus,2115801,urn:lsid:nmbe.ch:spidersp:014852,Unknown,Female,2017-10-31,Australia,6,0.112,0.066,7.93,1.01,1.17,0.32,17.4,7.6,203.0,271.0,298.0,26.0,66.8,8.3,0.37,0.02,13.0,,
+1400,Thomisidae,Thomisus,labefactus,2337685,urn:lsid:nmbe.ch:spidersp:031463,Unknown,Female,2015-06-15,Japan,7,0.112,0.019,14.9,6.2,1.18,0.17,14.2,4.1,242.0,282.0,297.0,31.0,53.5,12.6,1.33,0.22,4.4,,
+3653,Araneidae,Argiope,aetheroides,716551,urn:lsid:nmbe.ch:spidersp:015343,Unknown,Female,2016-06-20,Japan,15,0.112,0.038,7.06,1.08,0.89,0.13,24.3,5.2,217.0,278.0,298.0,30.0,39.9,9.8,2.87,0.34,3.0,36.7,7.2
+5058,Araneidae,Zygiella,hiramatsui,2337719,urn:lsid:nmbe.ch:spidersp:049604,Unknown,Female,2017-03-20,Japan,5,0.111,0.014,2.34,0.78,0.92,0.07,29.8,4.6,191.0,219.0,246.0,17.0,62.1,31.7,0.57,0.1,9.4,,
+4143,Theridiidae,Chrysso,scintillans,2337345,urn:lsid:nmbe.ch:spidersp:007269,Unknown,Female,2016-07-29,Japan,9,0.109,0.012,6.2,0.45,0.78,0.18,34.7,3.8,,,,12.0,34.6,4.6,1.1,0.08,,,
+2156,Araneidae,Nephilengys,malabarensis,593433,urn:lsid:nmbe.ch:spidersp:013993,Unknown,Unknown,2015-09-08,Malaysia,,0.109,0.025,12.3,3.3,1.12,0.11,17.6,4.7,219.0,287.0,309.0,23.0,49.5,22.8,1.57,0.32,2.9,23.9,7.5
+5019,Araneidae,Gasteracantha,diadesmia,2337415,urn:lsid:nmbe.ch:spidersp:016017,Unknown,Female,2017-01-25,India,,0.109,0.026,5.85,2.79,0.89,0.2,26.5,4.0,225.0,276.0,296.0,18.0,34.6,2.8,2.42,0.08,0.2,5.4,3.2
+2159,Araneidae,Nephilengys,malabarensis,593433,urn:lsid:nmbe.ch:spidersp:013993,Unknown,Female,2015-09-08,Malaysia,,0.108,0.035,13.2,1.4,1.12,0.14,15.4,3.1,225.0,287.0,306.0,23.0,43.1,9.0,4.96,0.67,7.1,25.5,5.7
+3569,Salticidae,Yaginumanis,sexdentatus,2337713,urn:lsid:nmbe.ch:spidersp:036834,Unknown,Female,2016-05-18,Japan,8,0.107,0.018,9.07,1.45,0.7,0.1,21.0,1.3,,,,3.0,39.4,4.9,1.33,0.08,,,
+3900,Araneidae,Eustala,anastera,336652,urn:lsid:nmbe.ch:spidersp:015911,Unknown,Female,2016-07-02,United States,9,0.106,0.019,8.17,1.19,0.91,0.07,18.0,3.7,,,,12.0,37.4,9.6,1.19,0.14,,,
+6838,Araneidae,Cryptaranea,sp. (OTU0455),2337743,,Unknown,Female,2017-11-05,Australia,,0.106,0.023,8.73,2.12,1.09,0.13,18.7,3.8,197.0,268.0,293.0,27.0,32.9,7.1,2.13,0.07,18.4,,
+2429,Araneidae,Argiope,minuta,716549,urn:lsid:nmbe.ch:spidersp:015390,Unknown,Female,2015-09-27,Japan,7,0.106,0.024,8.29,1.4,0.93,0.06,20.3,1.9,237.0,285.0,303.0,21.0,43.8,5.6,2.34,0.07,2.8,17.1,6.1
+3534,Araneidae,Yaginumia,sia,1112568,urn:lsid:nmbe.ch:spidersp:017156,Unknown,Female,2016-05-17,Japan,10,0.106,0.036,10.1,2.7,0.97,0.11,16.7,3.5,,,,9.0,52.3,8.0,0.87,0.04,,,
+5218,Theridiidae,Chrysso,sp. (OTU0856),2337346,,Unknown,Female,2017-04-15,Malaysia,4,0.106,0.025,5.51,2.09,1.05,0.21,18.4,6.2,269.0,293.0,307.0,10.0,39.3,5.2,0.72,0.04,15.7,,
+5318,Theridiidae,Gen.,sp. (OTU0462),2337882,,Unknown,Female,2017-04-17,Malaysia,6,0.106,0.036,8.94,1.95,1.0,0.18,18.0,4.2,209.0,286.0,307.0,6.0,37.8,4.1,0.81,0.03,4.7,,
+2682,Araneidae,Neoscona,theisi,1112448,urn:lsid:nmbe.ch:spidersp:016763,Unknown,Female,2015-10-21,Japan,7,0.106,0.025,13.0,0.6,0.79,0.15,20.3,4.8,204.0,252.0,286.0,31.0,55.0,7.6,1.07,0.05,8.3,21.0,10.6
+5239,Tetragnathidae,Leucauge,sp. (OTU0111),2337457,,Unknown,Unknown,2017-04-16,Malaysia,3,0.105,0.074,5.41,2.02,1.47,0.5,21.7,1.7,248.0,269.0,293.0,,71.4,9.8,0.4,0.03,9.0,,
+7365,Deinopidae,Deinopis,sp. (OTU0262),2511306,,Unknown,Female,2018-10-25,Madagascar,17,0.105,0.037,8.66,4.94,1.32,0.17,17.7,7.3,254.0,284.0,300.0,29.0,58.7,7.3,0.38,0.02,6.0,48.6,2.6
+6079,Tetragnathidae,Tetragnatha,montana,500645,urn:lsid:nmbe.ch:spidersp:014265,Unknown,Female,2017-07-26,United Kingdom,9,0.104,0.07,5.92,0.44,1.51,0.51,16.2,6.2,,,,,53.0,8.6,0.4,0.03,,,
+5337,Theridiidae,Rhomphaea,sp. (OTU0325),2337633,,Unknown,Female,2017-04-17,Malaysia,4,0.104,0.006,1.9,0.56,0.77,0.04,31.1,9.8,,,,,61.5,10.2,0.54,0.02,,,
+1793,Araneidae,Cyrtarachne,akirai,1463313,urn:lsid:nmbe.ch:spidersp:046730,Unknown,Female,2015-07-21,Japan,8,0.104,0.027,12.1,2.8,0.94,0.09,17.3,4.5,233.0,277.0,295.0,16.0,31.9,14.8,3.21,0.89,5.7,,
+3631,Araneidae,Cyclosa,laticauda,1112405,urn:lsid:nmbe.ch:spidersp:015644,Unknown,Female,2016-06-20,Japan,7,0.103,0.03,8.02,2.02,0.94,0.11,21.9,2.1,,,,27.0,36.3,4.2,1.96,0.12,,35.5,6.9
+6823,Clubionidae,Clubiona,sp. (OTU0921),2337357,,Unknown,Male,2017-11-04,Australia,15,0.103,0.018,4.69,1.36,0.54,0.04,30.8,3.9,205.0,276.0,302.0,30.0,52.5,6.7,1.38,0.12,8.1,6.9,2.6
+5570,Araneidae,Neoscona,sp. (OTU0257),2507266,,Unknown,Male,2017-06-10,China,6,0.103,0.024,5.42,0.85,1.2,0.17,23.4,4.7,,,,7.0,39.3,11.7,0.69,0.09,,,
+3755,Oxyopidae,Oxyopes,macilentus,2337546,urn:lsid:nmbe.ch:spidersp:020041,Unknown,Female,2016-06-22,Japan,9,0.102,0.017,13.0,3.8,1.31,0.2,14.2,1.9,,,,,51.6,8.9,0.87,0.06,,,
+708,Araneidae,Araneus,ventricosus,182803,urn:lsid:nmbe.ch:spidersp:015279,Unknown,Unknown,2015-05-11,Japan,,0.102,0.04,2.59,1.2,0.6,0.15,31.0,9.7,244.0,287.0,306.0,28.0,49.6,3.0,2.69,0.05,8.6,,
+6129,Araneidae,Zygiella,dispar,2175612,urn:lsid:nmbe.ch:spidersp:017170,Unknown,Female,2017-08-07,Japan,5,0.102,0.04,10.4,1.82,1.63,0.18,13.2,2.3,,,,,60.0,12.2,0.36,0.03,,,
+6019,Araneidae,Larinioides,cornutus,336591,urn:lsid:nmbe.ch:spidersp:016288,Unknown,Female,2017-07-24,United Kingdom,,0.102,0.038,10.7,1.46,1.25,0.2,15.2,3.6,230.0,283.0,298.0,24.0,44.0,7.3,1.74,0.19,6.6,47.3,3.5
+5219,Araneidae,Gasteracantha,kuhli,216277,urn:lsid:nmbe.ch:spidersp:016031,Unknown,Female,2017-04-15,Malaysia,5,0.102,0.015,3.23,0.09,0.64,0.05,30.9,1.2,230.0,283.0,302.0,17.0,29.0,2.5,2.0,0.03,6.1,,
+6367,Thomisidae,Tmarus,rimosus,1112499,urn:lsid:nmbe.ch:spidersp:031708,Unknown,Female,2017-09-13,Japan,6,0.101,0.059,8.76,1.38,1.46,0.37,14.2,4.8,,,,,59.8,6.0,0.38,0.02,,,
+3392,Thomisidae,Oxytate,striatipes,1112455,urn:lsid:nmbe.ch:spidersp:030816,Unknown,Female,2016-05-12,Japan,11,0.101,0.038,10.9,2.9,0.86,0.18,17.6,5.0,221.0,269.0,295.0,15.0,47.7,8.8,1.3,0.07,4.5,,
+2194,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Female,2015-09-13,Japan,8,0.101,0.033,10.5,0.7,1.18,0.17,22.3,3.3,207.0,264.0,292.0,27.0,32.9,4.0,2.72,0.12,5.0,28.5,10.3
+3924,Pisauridae,Dolomedes,sp. (OTU0747),2337394,,Unknown,Male,2016-07-02,United States,20,0.101,0.029,12.1,2.48,1.09,0.25,15.9,5.1,,,,11.0,45.0,25.0,1.1,0.33,,,
+5051,Uloboridae,Zosis,geniculata,1750748,urn:lsid:nmbe.ch:spidersp:006439,Unknown,Unknown,2017-03-20,Japan,5,0.1,0.02,6.5,2.15,1.23,0.1,17.0,4.1,,,,,73.8,21.1,0.48,0.04,,,
+2174,Araneidae,Cyrtophora,moluccensis,299645,urn:lsid:nmbe.ch:spidersp:015827,Unknown,Female,2015-09-08,Malaysia,,0.1,0.063,10.9,1.3,0.66,0.15,21.8,9.7,243.0,290.0,311.0,17.0,40.2,6.4,2.18,0.15,7.1,12.3,3.4
+5199,Tetragnathidae,Orsinome,sp. (OTU0371),2337537,,Unknown,Female,2017-04-15,Malaysia,7,0.1,0.039,13.6,2.45,1.15,0.24,16.8,3.2,193.0,245.0,278.0,26.0,48.0,10.3,0.47,0.06,11.7,,
+6731,Araneidae,Argiope,sp. 3,,,Unknown,Female,2017-10-30,Australia,12,0.099,0.042,10.7,1.36,1.21,0.24,14.8,3.5,208.0,279.0,300.0,22.0,40.7,3.8,2.44,0.1,9.5,,
+5214,Araneidae,Parawixia,dehaani,2337571,urn:lsid:nmbe.ch:spidersp:016893,Unknown,Female,2017-04-15,Malaysia,18,0.099,0.029,5.98,0.42,1.12,0.24,26.9,1.2,233.0,285.0,304.0,20.0,37.6,9.2,2.66,0.19,6.1,43.9,5.6
+4954,Araneidae,Cyclosa,bifida,2293436,urn:lsid:nmbe.ch:spidersp:015579,Unknown,Female,2017-01-24,India,7,0.099,0.032,2.49,1.28,1.06,0.44,25.8,3.1,,,,,60.3,12.9,0.75,0.06,,,
+904,Araneidae,Neoscona,scylla,1112445,urn:lsid:nmbe.ch:spidersp:016750,Unknown,Female,2015-05-24,Japan,,0.098,0.044,3.99,0.43,0.75,0.2,25.5,4.3,198.0,237.0,280.0,29.0,25.5,4.3,1.83,0.1,11.2,,
+6148,Araneidae,Araneus,diadematus,45920,urn:lsid:nmbe.ch:spidersp:014834,Unknown,Female,2017-08-07,Japan,,0.098,0.035,9.16,0.68,0.68,0.1,21.2,4.4,222.0,283.0,302.0,28.0,45.4,3.6,1.27,0.02,9.3,,
+2469,Araneidae,Larinioides,cornutus,336591,urn:lsid:nmbe.ch:spidersp:016288,Unknown,Female,2015-09-28,Japan,9,0.097,0.051,6.42,1.1,0.75,0.25,20.9,4.4,224.0,274.0,291.0,27.0,38.7,6.9,1.64,0.18,6.8,,
+1797,Araneidae,Argiope,amoena,216270,urn:lsid:nmbe.ch:spidersp:015345,Unknown,Female,2015-08-15,Japan,16,0.097,0.022,9.61,0.91,1.09,0.14,16.4,2.0,198.0,240.0,273.0,23.0,31.6,11.5,4.56,0.39,3.4,,
+4204,Uloboridae,Octonoba,yesoensis,1112453,urn:lsid:nmbe.ch:spidersp:006312,Unknown,Female,2016-08-04,Japan,4,0.097,0.062,3.57,1.73,0.85,0.25,43.2,5.3,,,,,60.7,8.2,0.75,0.05,,,
+3630,Araneidae,Argiope,ocula,716557,urn:lsid:nmbe.ch:spidersp:015393,Unknown,Female,2016-06-20,Japan,10,0.096,0.032,7.2,0.3,1.01,0.13,19.7,2.8,,,,4.0,32.6,1.2,4.46,0.08,,,
+7306,Araneidae,Nephilingis,livida,2511332,urn:lsid:nmbe.ch:spidersp:043939,Unknown,Female,2018-10-25,Madagascar,23,0.095,0.032,6.7,0.29,0.53,0.08,25.3,5.1,240.0,290.0,308.0,34.0,50.8,1.9,2.63,0.05,5.6,20.8,4.9
+2739,Theridiidae,Parasteatoda,ryukyu,2337566,urn:lsid:nmbe.ch:spidersp:037042,Unknown,Female,2015-11-19,Japan,4,0.095,0.022,8.1,3.7,0.81,0.1,20.8,3.4,,,,,47.9,7.9,0.89,0.06,,,
+4529,Theridiidae,Platnickina,sterninotata,2337608,urn:lsid:nmbe.ch:spidersp:008702,Unknown,Female,2016-10-11,Japan,2,0.094,0.039,10.7,1.3,1.14,0.02,11.3,0.5,,,,,21.7,3.3,0.63,0.04,,,
+3605,Theridiidae,Ariamnes,cylindrogaster,1112391,urn:lsid:nmbe.ch:spidersp:007025,Unknown,Female,2016-05-19,Japan,27,0.093,0.033,7.05,1.41,0.79,0.14,20.6,3.7,,,,27.0,35.6,6.2,1.26,0.05,,,
+5944,Tetragnathidae,Metellina,merianae,473146,urn:lsid:nmbe.ch:spidersp:013918,Unknown,Male,2017-07-22,United Kingdom,,0.093,0.025,8.74,2.46,1.35,0.21,14.5,2.0,232.0,277.0,295.0,,42.8,4.4,0.54,0.02,21.9,,
+2796,Araneidae,Thelacantha,brevispina,1508453,urn:lsid:nmbe.ch:spidersp:017085,Unknown,Female,2015-11-20,Japan,6,0.093,0.026,7.1,0.47,0.99,0.05,20.5,4.0,,,,18.0,41.4,2.3,1.61,0.04,,,
+4682,Araneidae,Trichonephila,clavata,70342,urn:lsid:nmbe.ch:spidersp:013940,Unknown,Female,2016-11-02,China,,0.092,0.024,9.05,2.08,1.12,0.14,16.9,2.7,239.0,285.0,304.0,15.0,52.6,10.9,2.68,0.03,5.1,,
+5268,Tetragnathidae,Mesida,sp. (OTU0499),2337481,,Unknown,Female,2017-04-15,Malaysia,5,0.091,0.033,3.14,0.75,1.18,0.19,19.1,4.3,242.0,275.0,301.0,,55.3,8.3,0.48,0.02,14.0,,
+4977,Tetragnathidae,Tetragnatha,sp. 2,,,Unknown,Unknown,2017-01-24,India,10,0.091,0.03,4.16,0.43,1.03,0.17,18.6,4.0,,,,15.0,19.5,4.3,0.66,0.05,,,
+2383,Agelenidae,Agelena,silvatica,648239,urn:lsid:nmbe.ch:spidersp:039417,Unknown,Female,2015-09-27,Japan,13,0.09,0.033,14.1,2.8,0.81,0.16,17.8,4.2,,,,33.0,55.6,9.6,0.83,0.05,,,
+2059,Araneidae,Parawixia,dehaani,2337571,urn:lsid:nmbe.ch:spidersp:016893,Unknown,Unknown,2015-09-07,Malaysia,,0.09,0.055,8.0,3.8,0.94,0.44,18.3,5.8,228.0,279.0,309.0,18.0,38.0,15.5,3.33,0.63,9.0,50.4,7.9
+4450,Theridiidae,Nihonhimea,japonica,2337769,urn:lsid:nmbe.ch:spidersp:006803,Unknown,Female,2016-10-10,Japan,3,0.09,0.007,4.64,2.43,1.0,0.04,20.2,1.9,,,,,33.5,4.2,0.59,0.02,,,
+30,Araneidae,Thelacantha,brevispina,1508453,urn:lsid:nmbe.ch:spidersp:017085,Unknown,Female,2014-12-08,Japan,,0.09,0.013,3.15,0.7,0.52,0.08,36.1,7.5,,,,,18.7,2.8,4.63,0.48,,,
+4911,Araneidae,Nephila,pilipes,299642,urn:lsid:nmbe.ch:spidersp:013960,Unknown,Female,2017-01-24,India,24,0.089,0.026,5.59,1.75,0.98,0.18,19.5,2.9,217.0,276.0,299.0,19.0,34.7,1.4,1.95,0.05,7.3,35.6,9.9
+4959,Araneidae,Cyrtophora,unicolor,1485616,urn:lsid:nmbe.ch:spidersp:015838,Unknown,Unknown,2017-01-24,India,7,0.089,0.04,6.07,1.1,1.06,0.09,16.5,5.1,,,,24.0,45.4,3.4,1.69,0.04,,,
+7397,Viridasiidae,Vulsor,sp. (OTU0568),2511312,,Unknown,Female,2018-10-26,Madagascar,21,0.089,0.033,10.5,1.51,0.96,0.1,14.5,3.3,,,,,42.1,3.9,1.25,0.05,,,
+4037,Oxyopidae,Oxyopes,sertatus,93706,urn:lsid:nmbe.ch:spidersp:020116,Unknown,Female,2016-07-14,Japan,11,0.089,0.022,5.58,1.77,0.78,0.11,19.0,4.0,,,,20.0,38.8,4.5,1.77,0.07,,,
+4739,Araneidae,Cyclosa,mulmeinensis,345697,urn:lsid:nmbe.ch:spidersp:015662,Unknown,Female,2016-11-07,Japan,4,0.088,0.027,3.41,0.03,0.81,0.19,24.5,1.3,235.0,282.0,305.0,15.0,77.9,14.1,0.64,0.05,,31.8,6.8
+3860,Araneidae,Neoscona,sp. (OTU0133),2337506,,Unknown,Male,2016-07-01,United States,10,0.087,0.028,24.1,9.16,1.68,0.36,8.7,0.5,203.0,273.0,297.0,25.0,28.3,7.3,1.28,0.17,8.1,,
+2015,Tetragnathidae,Orsinome,sp. (OTU0736),2337535,,Unknown,Female,2015-09-07,Malaysia,,0.086,0.025,7.64,2.6,0.94,0.1,18.2,2.6,,,,24.0,53.2,19.8,1.0,0.12,,,
+329,Araneidae,Yaginumia,sia,1112568,urn:lsid:nmbe.ch:spidersp:017156,Unknown,Unknown,2014-10-09,Japan,,0.086,0.013,5.48,1.2,0.65,0.14,22.5,5.0,216.0,278.0,301.0,31.0,41.7,13.1,1.91,0.21,4.1,,
+1498,Araneidae,Argiope,bruennichi,94029,urn:lsid:nmbe.ch:spidersp:015356,Unknown,Unknown,2015-07-09,Japan,,0.086,0.018,8.16,5.2,1.02,0.17,18.7,5.4,258.0,295.0,311.0,21.0,38.3,10.4,2.09,0.36,5.5,,
+4781,Araneidae,Cyrtophora,unicolor,1485616,urn:lsid:nmbe.ch:spidersp:015838,Unknown,Unknown,2016-11-28,Japan,5,0.085,0.01,4.42,1.17,0.76,0.06,18.5,4.9,,,,16.0,47.8,14.9,0.64,0.02,,,
+7621,Pholcidae,Holocnemus,pluchei,,urn:lsid:nmbe.ch:spidersp:003407,Unknown,Unknown,2019-10-07,Italy,,0.084,0.021,7.62,0.62,0.92,0.06,18.3,5.7,,,,,54.7,8.1,0.43,0.03,,,
+4487,Araneidae,Araneus,macacus,2337292,urn:lsid:nmbe.ch:spidersp:014996,Unknown,Female,2016-10-11,Japan,,0.084,0.025,6.41,1.35,1.04,0.15,17.9,3.8,220.0,281.0,303.0,20.0,35.8,3.5,2.44,0.13,2.6,33.3,2.0
+6048,Theridiidae,Enoplognatha,ovata,81834,urn:lsid:nmbe.ch:spidersp:007578,Unknown,Female,2017-07-25,United Kingdom,6,0.084,0.071,8.05,1.64,1.32,0.54,13.6,7.0,,,,,50.6,8.2,0.46,0.04,,,
+5086,Uloboridae,Octonoba,grandiconcava,2337523,urn:lsid:nmbe.ch:spidersp:006297,Unknown,Unknown,2017-03-21,Japan,3,0.084,0.033,2.16,1.06,1.21,0.35,23.3,3.7,,,,,49.2,9.4,0.44,0.02,,,
+1589,Pisauridae,Dolomedes,orion,492285,urn:lsid:nmbe.ch:spidersp:038694,Unknown,Female,2015-07-13,Japan,30,0.083,0.044,11.6,2.3,0.76,0.17,16.1,5.1,206.0,265.0,292.0,27.0,34.3,9.5,2.42,0.4,5.5,,
+3681,Araneidae,Neoscona,subpullata,1112447,urn:lsid:nmbe.ch:spidersp:016761,Unknown,Female,2016-06-21,Japan,5,0.083,0.017,6.31,0.54,0.8,0.02,18.6,3.7,,,,20.0,51.7,11.0,1.16,0.11,,,
+6704,Desidae,Badumna,sp. (OTU0057),2337323,,Unknown,Female,2017-10-30,Australia,14,0.083,0.021,7.37,1.66,0.97,0.33,16.4,2.1,206.0,272.0,300.0,,78.2,9.9,0.79,0.05,8.9,,
+2158,Araneidae,Argiope,sp. (OTU1080),2337307,,Unknown,Female,2015-09-08,Malaysia,,0.082,0.025,9.51,2.11,1.02,0.15,16.3,3.2,222.0,275.0,296.0,30.0,37.1,1.5,4.26,0.07,8.1,60.4,3.1
+5364,Uloboridae,Uloborus,sp. (OTU0809),2337695,,Unknown,Female,2017-04-17,Malaysia,3,0.082,0.026,5.73,1.24,0.68,0.22,19.6,2.7,,,,,35.3,6.2,0.64,0.04,,,
+6054,Araneidae,Araneus,diadematus,45920,urn:lsid:nmbe.ch:spidersp:014834,Unknown,Female,2017-07-25,United Kingdom,11,0.082,0.02,6.0,1.22,1.08,0.11,17.8,1.3,240.0,283.0,299.0,13.0,37.6,4.8,1.39,0.04,10.6,38.9,5.1
+5775,Lycosidae,Trochosa,ruricola,330967,urn:lsid:nmbe.ch:spidersp:019347,Unknown,Female,2017-07-05,Japan,10,0.081,0.024,6.2,1.01,1.14,0.13,15.1,1.9,,,,,48.4,7.3,0.41,0.02,,,
+4411,Theridiidae,Spheropistha,melanosoma,2337654,urn:lsid:nmbe.ch:spidersp:007089,Unknown,Female,2016-09-28,Japan,,0.081,0.028,4.54,1.49,0.8,0.15,19.2,5.8,,,,,32.0,2.8,0.62,0.03,,,
+5222,Tetragnathidae,Tylorida,ventralis,1654948,urn:lsid:nmbe.ch:spidersp:014402,Unknown,Female,2017-04-15,Malaysia,7,0.081,0.038,7.47,1.88,1.24,0.32,13.5,3.6,,,,,44.6,13.4,0.6,0.02,,,
+5813,Pisauridae,Dolomedes,raptor,93702,urn:lsid:nmbe.ch:spidersp:019645,Unknown,Female,2017-07-11,Japan,26,0.08,0.026,6.74,1.85,0.82,0.11,16.4,4.9,,,,,37.5,5.2,0.72,0.03,,,
+5023,Pisauridae,Gen.,sp. (OTU0520),2337851,,Unknown,Unknown,2017-01-25,India,,0.08,0.01,3.53,0.72,1.13,0.31,18.5,1.5,,,,14.0,66.9,12.3,0.65,0.04,,,
+2674,Tetragnathidae,Tetragnatha,praedonia,1112494,urn:lsid:nmbe.ch:spidersp:014321,Unknown,Female,2015-10-21,Japan,12,0.079,0.013,6.36,2.0,0.67,0.01,21.3,5.8,,,,,35.4,14.9,0.87,0.08,,,
+5926,Araneidae,Zygiella,x-notata,389061,urn:lsid:nmbe.ch:spidersp:017187,Unknown,Unknown,2017-07-22,United Kingdom,6,0.079,0.028,5.87,1.45,0.75,0.12,14.7,4.8,,,,,67.3,11.9,0.57,0.03,,,
+4109,Tetragnathidae,Metleucauge,kompirensis,2337484,urn:lsid:nmbe.ch:spidersp:013928,Unknown,Female,2016-07-28,Japan,,0.078,0.028,5.65,1.09,0.94,0.33,16.5,2.9,204.0,247.0,271.0,23.0,36.7,8.6,1.24,0.05,5.6,,
+3393,Tetragnathidae,Tetragnatha,praedonia,1112494,urn:lsid:nmbe.ch:spidersp:014321,Unknown,Female,2016-05-12,Japan,7,0.077,0.02,8.61,2.3,0.87,0.11,16.6,2.2,,,,,33.7,9.4,1.25,0.09,,,
+6329,Theridiidae,Argyrodes,miniaceus,1529486,urn:lsid:nmbe.ch:spidersp:007098,Unknown,Female,2017-09-12,Japan,4,0.077,0.035,8.62,2.31,1.51,0.43,12.3,2.3,,,,,62.3,7.3,0.38,0.02,,,
+3868,Araneidae,Mecynogea,lemniscata,329906,urn:lsid:nmbe.ch:spidersp:016398,Unknown,Female,2016-07-02,United States,7,0.077,0.051,7.63,3.58,1.01,0.33,11.2,2.2,215.0,285.0,316.0,24.0,54.6,7.9,0.69,0.02,4.5,,
+1792,Pisauridae,Dolomedes,pegasus,1125757,urn:lsid:nmbe.ch:spidersp:045613,Unknown,Female,2015-07-21,Japan,29,0.076,0.014,13.4,3.9,0.85,0.08,15.4,2.9,206.0,252.0,280.0,,42.3,8.5,2.58,0.28,4.8,,
+2566,Araneidae,Neoscona,theisi,1112448,urn:lsid:nmbe.ch:spidersp:016763,Unknown,Female,2015-10-14,Japan,7,0.076,0.073,6.68,1.2,0.76,0.25,16.0,3.7,197.0,263.0,298.0,18.0,36.8,5.8,1.19,0.06,5.1,,
+214,Theridiidae,Dipoena,punctisparsa,2337392,urn:lsid:nmbe.ch:spidersp:007467,Unknown,Unknown,2014-10-19,Japan,,0.076,0.032,6.03,0.85,0.64,0.1,20.3,7.1,,,,,33.6,13.5,1.16,0.09,,,
+220,Agelenidae,Allagelena,opulenta,29934,urn:lsid:nmbe.ch:spidersp:020878,Unknown,Female,2014-10-19,Japan,,0.076,0.034,5.14,1.3,0.54,0.1,20.2,5.0,,,,,42.8,8.2,1.67,0.04,,,
+5792,Tetragnathidae,Leucauge,subblanda,1933406,urn:lsid:nmbe.ch:spidersp:042861,Unknown,Female,2017-07-11,Japan,8,0.076,0.051,6.25,2.06,0.96,0.33,14.7,3.8,217.0,278.0,292.0,,49.4,8.2,0.59,0.04,5.6,,
+3471,Araneidae,Plebs,astridae,2337609,urn:lsid:nmbe.ch:spidersp:015873,Unknown,Female,2016-05-13,Japan,10,0.075,0.012,8.58,2.62,0.92,0.28,16.4,1.4,,,,9.0,42.5,8.9,1.18,0.09,,,
+3306,Araneidae,Cyrtophora,exanthematica,1538126,urn:lsid:nmbe.ch:spidersp:015813,Unknown,Female,2016-04-15,Japan,10,0.074,0.04,7.1,2.82,0.81,0.29,17.0,3.2,261.0,297.0,314.0,20.0,42.1,4.1,3.19,0.19,4.8,11.2,6.4
+3480,Theridiidae,Enoplognatha,abrupta,2337400,urn:lsid:nmbe.ch:spidersp:008013,Unknown,Female,2016-05-14,Japan,7,0.074,0.022,10.0,2.4,0.81,0.04,14.2,3.6,,,,18.0,39.7,4.3,1.37,0.06,,10.8,6.7
+5580,Araneidae,Araneus,sp. (OTU0080),2507252,,Unknown,Unknown,2017-06-11,China,,0.074,0.04,4.29,0.66,0.74,0.15,20.3,6.8,,,,9.0,60.8,7.8,0.96,0.04,,,
+5238,Psechridae,Psechrus,sp. (OTU0614),2337623,,Unknown,Unknown,2017-04-16,Malaysia,10,0.073,0.024,5.96,0.66,0.66,0.08,18.2,4.1,,,,,44.4,2.2,2.42,0.04,,,
+5938,Tetragnathidae,Metellina,mengei,500646,urn:lsid:nmbe.ch:spidersp:013917,Unknown,Male,2017-07-22,United Kingdom,,0.073,0.031,3.39,0.66,0.88,0.2,17.9,7.1,274.0,306.0,328.0,,41.5,7.3,0.56,0.03,21.4,,
+2269,Tetragnathidae,Leucauge,celebesiana,1112430,urn:lsid:nmbe.ch:spidersp:013704,Unknown,Female,2015-09-14,Japan,9,0.072,0.001,7.05,1.08,1.15,0.14,15.0,2.1,,,,,42.4,13.3,1.33,0.07,,,
+2414,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Female,2015-09-27,Japan,7,0.072,0.027,5.02,2.0,0.58,0.11,22.4,3.2,214.0,268.0,291.0,18.0,29.3,1.8,2.76,0.09,8.9,26.8,9.1
+5515,Philodromidae,Philodromus,subaureolus,1112463,urn:lsid:nmbe.ch:spidersp:029954,Unknown,Female,2017-05-25,Japan,5,0.072,0.02,4.56,1.19,1.04,0.18,14.4,1.7,,,,,74.3,13.4,0.48,0.02,,,
+5198,Oxyopidae,Oxyopes,sp. (OTU0943),2337547,,Unknown,Female,2017-04-15,Malaysia,,0.072,0.031,2.98,0.49,0.93,0.12,18.7,4.6,205.0,284.0,307.0,15.0,50.0,10.9,0.46,0.04,10.8,,
+6196,Cheiracanthiidae,Cheiracanthium,japonicum,1112394,urn:lsid:nmbe.ch:spidersp:023343,Unknown,Unknown,2017-08-09,Japan,,0.071,0.065,14.2,3.4,0.82,0.16,14.3,10.6,,,,,47.3,7.9,0.48,0.05,,,
+2794,Araneidae,Neoscona,subpullata,1112447,urn:lsid:nmbe.ch:spidersp:016761,Unknown,Female,2015-11-20,Japan,5,0.07,0.019,11.1,3.8,0.78,0.09,13.1,5.0,187.0,213.0,243.0,17.0,47.8,15.5,0.73,0.07,13.0,,
+4740,Thomisidae,Oxytate,hoshizuna,2337550,urn:lsid:nmbe.ch:spidersp:030808,Unknown,Unknown,2016-11-07,Japan,6,0.07,0.038,10.6,2.81,0.9,0.1,10.8,3.6,,,,,36.7,3.8,0.57,0.03,,,
+6846,Desidae,Badumna,insignis,1685383,urn:lsid:nmbe.ch:spidersp:021463,Unknown,Female,2017-11-05,Australia,,0.07,0.013,13.1,1.48,1.28,0.19,10.7,1.5,,,,,38.4,5.3,0.7,0.04,,5.1,1.6
+3476,Salticidae,Myrmarachne,japonica,1112438,urn:lsid:nmbe.ch:spidersp:034810,Unknown,Male,2016-05-14,Japan,8,0.069,0.015,19.5,3.2,1.17,0.12,8.3,1.4,,,,,46.7,9.6,1.03,0.03,,,
+3342,Tetragnathidae,Tetragnatha,sp. 1,,,Unknown,Female,2016-04-15,Japan,,0.069,0.033,6.48,2.42,0.84,0.33,17.1,2.9,,,,,34.5,12.9,1.11,0.08,,,
+6726,Pisauridae,Dolomedes,sp. (OTU0913),2337396,,Unknown,Female,2017-10-30,Australia,28,0.069,0.042,14.1,2.7,1.27,0.18,9.2,3.1,,,,,51.1,5.4,1.4,0.06,,,
+6985,Theridiidae,Nesticodes,rufipes,233304,urn:lsid:nmbe.ch:spidersp:007859,Unknown,Female,2017-12-08,Japan,3,0.068,0.027,3.26,0.77,0.76,0.12,19.8,4.3,,,,,60.9,7.1,0.38,0.02,,,
+4221,Uloboridae,Octonoba,yesoensis,1112453,urn:lsid:nmbe.ch:spidersp:006312,Unknown,Female,2016-08-04,Japan,4,0.068,0.03,5.98,0.53,0.83,0.11,16.4,5.2,,,,,58.1,9.0,0.7,0.02,,,
+2246,Tetragnathidae,Leucauge,blanda,1112429,urn:lsid:nmbe.ch:spidersp:013694,Unknown,Female,2015-09-13,Japan,9,0.067,0.02,7.58,1.9,0.66,0.16,17.3,5.1,,,,22.0,35.6,3.5,1.16,0.65,,,
+5146,Theridiidae,Argyrodes,bonadea,1529479,urn:lsid:nmbe.ch:spidersp:006996,Unknown,Female,2017-04-10,Japan,2,0.067,0.016,1.65,0.55,0.71,0.2,25.6,5.1,,,,,71.0,14.4,0.65,0.02,,,
+7008,Thomisidae,Phrynarachne,ceylonica,2337598,urn:lsid:nmbe.ch:spidersp:030967,Unknown,Female,2017-12-09,Japan,8,0.066,0.036,12.0,3.15,1.05,0.2,10.7,3.1,215.0,273.0,297.0,36.0,62.7,9.0,0.28,0.01,4.5,,
+5791,Salticidae,Sibianor,pullus,1112479,urn:lsid:nmbe.ch:spidersp:033703,Unknown,Female,2017-07-11,Japan,4,0.066,0.019,6.65,0.86,0.77,0.12,13.5,5.8,,,,,37.5,0.0,0.4,0.05,,,
+2294,Araneidae,Neoscona,adianta,1112440,urn:lsid:nmbe.ch:spidersp:016689,Unknown,Female,2015-09-14,Japan,12,0.066,0.016,5.76,1.4,0.59,0.17,20.7,6.1,205.0,271.0,298.0,28.0,31.2,5.4,1.9,0.11,7.9,,
+2301,Tetragnathidae,Zhinu,reticuloides,2337810,urn:lsid:nmbe.ch:spidersp:013894,Unknown,Female,2015-09-14,Japan,5,0.064,0.017,10.2,1.5,0.88,0.14,13.4,1.0,,,,17.0,57.4,18.7,0.89,0.11,,,
+2590,Tetragnathidae,Zhinu,reticuloides,2337810,urn:lsid:nmbe.ch:spidersp:013894,Unknown,Female,2015-10-14,Japan,6,0.064,0.01,10.0,1.5,0.86,0.16,16.2,1.5,199.0,257.0,289.0,26.0,52.9,11.2,0.92,0.03,4.7,,
+5317,Hersiliidae,Gen.,sp. (OTU1072),2337825,,Unknown,Female,2017-04-17,Malaysia,13,0.064,0.015,0.38,0.07,0.34,0.01,48.9,6.0,,,,,33.6,4.0,0.49,0.03,,,
+4991,Salticidae,Plexippus,paykulli,243411,urn:lsid:nmbe.ch:spidersp:035670,Unknown,Unknown,2017-01-25,India,11,0.064,0.024,7.7,1.04,1.43,0.56,7.8,4.4,,,,17.0,96.6,16.4,0.48,0.04,,,
+6848,Theridiidae,Cryptachaea,gigantipes,2337375,urn:lsid:nmbe.ch:spidersp:008392,Unknown,Female,2017-11-05,Australia,,0.064,0.025,3.47,0.75,0.57,0.11,20.2,3.6,256.0,294.0,307.0,20.0,33.3,2.1,1.04,0.03,11.2,25.2,7.4
+5928,Tetragnathidae,Metellina,merianae,473146,urn:lsid:nmbe.ch:spidersp:013918,Unknown,Female,2017-07-22,United Kingdom,9,0.063,0.013,12.4,2.26,1.13,0.13,9.8,2.0,227.0,281.0,305.0,,44.6,3.8,0.79,0.03,8.7,,
+5040,Araneidae,Gasteracantha,sp. (OTU0225),2337416,,Unknown,Female,2017-01-25,India,,0.063,0.012,4.11,1.22,0.72,0.13,19.0,2.1,229.0,288.0,312.0,22.0,38.7,4.1,2.33,0.1,5.2,41.1,11.8
+2313,Pisauridae,Dolomedes,sulfureus,492288,urn:lsid:nmbe.ch:spidersp:019661,Unknown,Female,2015-09-15,Japan,19,0.062,0.018,9.26,3.5,0.63,0.1,13.9,1.9,221.0,275.0,296.0,20.0,28.5,3.4,2.86,0.14,6.4,19.6,5.5
+1798,Araneidae,Argiope,amoena,216270,urn:lsid:nmbe.ch:spidersp:015345,Unknown,Female,2015-08-15,Japan,19,0.062,0.018,8.31,1.1,0.87,0.06,15.2,4.8,252.0,289.0,306.0,19.0,37.5,7.7,4.94,0.49,8.8,,
+4269,Clubionidae,Clubiona,riparia,1107590,urn:lsid:nmbe.ch:spidersp:024746,Unknown,Female,2016-08-05,Japan,8,0.062,0.045,25.3,9.76,1.64,0.74,6.6,2.9,,,,19.0,33.6,9.9,0.68,0.09,,,
+4463,Dictynidae,Dictyna,felis,2337390,urn:lsid:nmbe.ch:spidersp:022276,Unknown,Female,2016-10-10,Japan,4,0.062,0.03,9.06,5.06,0.84,0.19,13.0,5.3,213.0,273.0,299.0,,66.7,12.2,0.67,0.05,3.3,,
+2233,Araneidae,Larinia,argiopiformis,1112526,urn:lsid:nmbe.ch:spidersp:016286,Unknown,Female,2015-09-13,Japan,11,0.061,0.017,10.1,2.3,1.03,0.44,12.2,2.1,194.0,252.0,285.0,,35.3,14.2,1.3,0.2,7.2,29.9,
+5072,Salticidae,Portia,fimbriata,426831,urn:lsid:nmbe.ch:spidersp:035712,Unknown,Male,2017-03-21,Japan,7,0.061,0.019,4.5,0.99,0.85,0.04,16.4,6.1,,,,,60.5,13.0,0.8,0.04,,,
+2180,Araneidae,Argiope,bruennichi,94029,urn:lsid:nmbe.ch:spidersp:015356,Unknown,Female,2015-09-13,Japan,24,0.06,0.031,10.1,1.7,0.93,0.19,11.9,3.3,231.0,284.0,304.0,22.0,53.2,6.2,4.19,0.08,8.7,52.7,3.0
+5532,Araneidae,Neoscona,sp. (OTU0257),2507266,,Unknown,Female,2017-06-10,China,,0.06,0.014,2.9,0.78,0.82,0.14,19.1,2.8,,,,13.0,30.9,5.1,0.8,0.04,,,
+4260,Pholcidae,Pholcus,opilionoides,280423,urn:lsid:nmbe.ch:spidersp:003739,Unknown,Female,2016-08-05,Japan,4,0.059,0.018,8.93,1.99,0.68,0.13,14.4,3.3,,,,,39.3,7.0,0.57,0.02,,,
+3737,Theridiidae,Parasteatoda,ryukyu,2337566,urn:lsid:nmbe.ch:spidersp:037042,Unknown,Female,2016-06-21,Japan,3,0.058,0.015,5.74,2.12,0.62,0.09,15.2,1.4,,,,5.0,30.1,18.7,1.26,0.32,,,
+3172,Araneidae,Arachnura,melanura,1538134,urn:lsid:nmbe.ch:spidersp:014645,Unknown,Female,2016-04-14,Japan,10,0.058,0.012,6.41,1.04,0.55,0.03,20.5,4.1,217.0,261.0,286.0,8.0,73.4,15.2,0.53,0.04,3.1,,
+4735,Tetragnathidae,Tetragnatha,makiharai,2055958,urn:lsid:nmbe.ch:spidersp:014250,Unknown,Female,2016-11-07,Japan,7,0.058,0.013,5.01,1.2,0.91,0.21,13.2,2.8,196.0,276.0,299.0,16.0,61.9,12.4,0.68,0.04,,,
+5109,Pisauridae,Pisaura,bicornis,2337605,urn:lsid:nmbe.ch:spidersp:019751,Unknown,Female,2017-04-09,Japan,8,0.055,0.024,3.23,0.92,0.97,0.07,17.9,3.9,,,,,51.0,14.7,0.68,0.03,,,
+6786,Araneidae,Cyclosa,sp. (OTU0457),2337387,,Unknown,Female,2017-10-31,Australia,7,0.054,0.018,8.38,1.49,1.0,0.17,10.8,3.1,194.0,237.0,273.0,17.0,59.7,12.1,0.37,0.04,12.2,,
+3469,Araneidae,Araneus,acusisetus,1112381,urn:lsid:nmbe.ch:spidersp:014661,Unknown,Female,2016-05-13,Japan,4,0.053,0.017,3.26,0.35,0.5,0.06,19.7,5.3,,,,11.0,39.2,12.7,1.23,0.12,,,
+4277,Theridiidae,Chrysso,foliata,2337344,urn:lsid:nmbe.ch:spidersp:037393,Unknown,Female,2016-08-05,Japan,3,0.053,0.015,4.07,0.76,0.58,0.09,17.0,2.1,,,,19.0,44.0,7.1,1.09,0.06,,,
+3894,Agelenidae,Agelenopsis,sp. 1,,,Unknown,Male,2016-07-02,United States,,0.053,0.039,6.72,3.66,0.95,0.43,10.8,3.2,,,,,52.2,18.5,1.0,0.12,,,
+4478,Uloboridae,Hyptiotes,affinis,2337442,urn:lsid:nmbe.ch:spidersp:006218,Unknown,Female,2016-10-11,Japan,4,0.051,0.013,2.98,0.04,0.49,0.05,22.2,2.6,282.0,300.0,314.0,,39.5,2.8,1.13,0.03,6.9,,
+3767,Araneidae,Cyclosa,confusa,1112402,urn:lsid:nmbe.ch:spidersp:015594,Unknown,Female,2016-06-22,Japan,8,0.05,0.017,5.29,2.08,0.64,0.16,16.3,0.9,,,,,37.9,6.5,1.17,0.05,,,
+3656,Araneidae,Neoscona,nautica,258338,urn:lsid:nmbe.ch:spidersp:016729,Unknown,Female,2016-06-21,Japan,8,0.05,0.014,6.33,0.26,0.7,0.08,13.1,1.5,210.0,273.0,291.0,21.0,34.3,9.5,2.09,0.31,2.4,31.6,11.5
+1894,Araneidae,Araneus,ishisawai,1112384,urn:lsid:nmbe.ch:spidersp:014949,Unknown,Female,2015-08-26,Japan,15,0.05,0.018,9.6,2.56,0.63,0.12,12.1,2.7,226.0,288.0,303.0,20.0,41.8,5.2,2.3,0.21,5.8,47.8,4.8
+4007,Pisauridae,Dolomedes,silvicola,492290,urn:lsid:nmbe.ch:spidersp:042003,Unknown,Female,2016-07-13,Japan,11,0.05,0.011,6.19,1.82,0.73,0.12,13.1,2.9,,,,19.0,57.0,17.9,0.87,0.15,,,
+5457,Araneidae,Araneus,pentagrammicus,2337294,urn:lsid:nmbe.ch:spidersp:015102,Unknown,Female,2017-05-23,Japan,8,0.05,0.013,2.19,0.37,0.36,0.09,34.5,3.8,285.0,302.0,316.0,14.0,39.0,5.9,1.09,0.04,19.0,,
+4121,Philodromidae,Tibellus,oblongus,336685,urn:lsid:nmbe.ch:spidersp:030106,Unknown,Female,2016-07-28,Japan,11,0.049,0.016,5.91,1.64,0.8,0.12,11.5,1.8,201.0,248.0,277.0,16.0,49.4,18.7,1.14,0.26,7.0,8.4,7.5
+3601,Salticidae,Pancorius,crassipes,2337560,urn:lsid:nmbe.ch:spidersp:033391,Unknown,Female,2016-05-19,Japan,10,0.048,0.006,4.05,0.58,0.31,0.04,22.9,3.9,,,,13.0,29.9,9.3,1.5,0.12,,,
+5231,Pisauridae,Hygropoda,sp. 1,,,Unknown,Unknown,2017-04-16,Malaysia,6,0.047,0.005,6.13,0.53,1.23,0.1,10.1,2.7,,,,,54.7,8.3,0.44,0.02,,,
+1965,Araneidae,Araneus,pinguis,2337295,urn:lsid:nmbe.ch:spidersp:015114,Unknown,Female,2015-08-27,Japan,19,0.046,0.008,5.83,0.65,0.49,0.02,18.1,2.4,248.0,292.0,308.0,20.0,23.4,4.4,6.29,0.5,9.2,47.9,2.6
+3899,Araneidae,Neoscona,sp. (OTU0133),2337506,,Unknown,Female,2016-07-02,United States,11,0.046,0.008,4.23,0.31,0.59,0.05,17.0,0.6,227.0,278.0,297.0,20.0,33.4,5.0,2.07,0.02,12.3,,
+4790,Tetragnathidae,Leucauge,celebesiana,1112430,urn:lsid:nmbe.ch:spidersp:013704,Unknown,Female,2016-11-28,Japan,7,0.043,0.014,2.09,0.61,0.53,0.06,18.4,3.7,198.0,245.0,277.0,16.0,25.7,3.7,0.89,0.03,10.6,,3.0
+5027,Araneidae,Cyrtophora,unicolor,1485616,urn:lsid:nmbe.ch:spidersp:015838,Unknown,Unknown,2017-01-25,India,8,0.043,0.019,5.08,1.52,0.67,0.12,12.2,2.5,209.0,280.0,307.0,23.0,70.2,14.9,0.72,0.05,7.6,6.1,2.5
+5804,Pisauridae,Dolomedes,saganus,492289,urn:lsid:nmbe.ch:spidersp:019647,Unknown,Female,2017-07-11,Japan,17,0.042,0.013,10.5,1.94,1.04,0.23,8.7,1.7,218.0,282.0,300.0,21.0,44.5,6.8,0.8,0.06,7.5,,
+5213,Salticidae,Portia,sp. (OTU0971),2337620,,Unknown,Female,2017-04-15,Malaysia,8,0.041,0.011,10.8,1.27,0.77,0.16,8.8,1.7,231.0,277.0,294.0,24.0,47.8,4.0,1.2,0.03,11.9,13.4,4.4
+4542,Pisauridae,Dolomedes,sulfureus,492288,urn:lsid:nmbe.ch:spidersp:019661,Unknown,Female,2016-10-12,Japan,15,0.04,0.017,5.63,1.45,0.6,0.06,11.9,3.4,,,,,48.4,9.2,1.28,0.15,,,
+3458,Thomisidae,Oxytate,striatipes,1112455,urn:lsid:nmbe.ch:spidersp:030816,Unknown,Female,2016-05-13,Japan,12,0.039,0.009,10.1,3.6,0.64,0.1,9.9,1.6,,,,21.0,33.5,10.6,1.35,0.08,,12.9,3.4
+4336,Agelenidae,Allagelena,donggukensis,2337283,urn:lsid:nmbe.ch:spidersp:020838,Unknown,Female,2016-09-06,Japan,11,0.037,0.016,2.85,1.19,0.44,0.1,17.4,3.2,198.0,247.0,286.0,19.0,68.7,10.3,0.74,0.04,2.6,,
+4275,Theridiidae,Enoplognatha,margarita,932962,urn:lsid:nmbe.ch:spidersp:007566,Unknown,Female,2016-08-05,Japan,4,0.037,0.006,14.2,2.06,0.98,0.22,7.0,2.0,,,,,57.6,18.1,0.43,0.02,,,
+4752,Theridiidae,Chrysso,viridiventris,2337347,urn:lsid:nmbe.ch:spidersp:007283,Unknown,Female,2016-11-07,Japan,2,0.036,0.012,2.75,0.66,0.65,0.1,14.6,4.0,,,,,42.1,8.0,0.56,0.03,,,
+5229,Araneidae,Gen.,sp. (OTU0160),2337813,,Unknown,Female,2017-04-16,Malaysia,4,0.036,0.015,3.07,0.89,0.71,0.14,13.2,2.5,,,,12.0,60.4,8.8,0.45,0.03,,,
+4364,Salticidae,Marpissa,milleri,1112432,urn:lsid:nmbe.ch:spidersp:034474,Unknown,Female,2016-09-07,Japan,10,0.035,0.016,2.83,2.15,0.33,0.03,25.0,13.7,,,,23.0,41.3,5.3,1.08,0.06,,,
+5097,Tetragnathidae,Tetragnatha,tanigawai,2055960,urn:lsid:nmbe.ch:spidersp:014367,Unknown,Male,2017-03-21,Japan,4,0.035,0.012,2.93,1.52,0.62,0.24,14.5,1.9,,,,,42.2,8.6,0.54,0.03,,,
+5118,Araneidae,Larinia,fusiformis,2337460,urn:lsid:nmbe.ch:spidersp:016301,Unknown,Female,2017-04-09,Japan,7,0.034,0.015,2.57,0.42,0.54,0.19,14.4,3.7,,,,14.0,37.6,11.2,0.79,0.07,,,
+3744,Pisauridae,Hygropoda,higenaga,492323,urn:lsid:nmbe.ch:spidersp:019701,Unknown,Female,2016-06-21,Japan,11,0.033,0.012,6.03,0.93,0.55,0.07,11.4,1.3,210.0,260.0,291.0,16.0,34.5,12.2,1.45,0.24,2.7,,
+4502,Salticidae,Phintelloides,versicolor,388273,urn:lsid:nmbe.ch:spidersp:035557,Unknown,Female,2016-10-11,Japan,5,0.031,0.02,8.74,3.19,0.72,0.29,7.7,1.9,,,,,47.7,7.7,0.69,0.03,,,
+4419,Araneidae,Cyclosa,hamulata,2337382,urn:lsid:nmbe.ch:spidersp:015627,Unknown,Female,2016-09-28,Japan,10,0.03,0.014,1.68,0.2,0.33,0.06,16.7,4.6,,,,,42.5,4.1,1.18,0.05,,,
+4531,Salticidae,Menemerus,fulvus,1112433,urn:lsid:nmbe.ch:spidersp:034554,Unknown,Male,2016-10-12,Japan,6,0.029,0.012,7.85,1.29,0.72,0.17,6.7,1.9,,,,,58.2,11.6,0.67,0.04,,,
+5054,Cheiracanthiidae,Cheiracanthium,sp. (OTU0991),2337337,,Unknown,Unknown,2017-03-20,Japan,8,0.029,0.011,2.15,0.73,0.42,0.06,13.1,4.6,,,,,63.2,15.9,0.61,0.06,,,
+5121,Salticidae,Pancorius,submontanus,2337562,urn:lsid:nmbe.ch:spidersp:035150,Unknown,Female,2017-04-09,Japan,8,0.028,0.004,15.8,3.95,0.91,0.1,5.4,1.4,,,,,41.9,7.4,0.64,0.02,,,
+4804,Thomisidae,Oxytate,hoshizuna,2337550,urn:lsid:nmbe.ch:spidersp:030808,Unknown,Male,2016-11-28,Japan,7,0.028,0.009,2.11,0.81,0.46,0.06,14.7,3.2,193.0,261.0,293.0,15.0,68.8,8.3,0.7,0.04,11.5,,
+4532,Thomisidae,Bassaniana,decorata,2337324,urn:lsid:nmbe.ch:spidersp:030165,Unknown,Female,2016-10-12,Japan,5,0.025,0.008,4.25,2.39,0.55,0.1,9.6,1.9,,,,,61.3,9.0,0.77,0.05,,,
+3897,Araneidae,Eustala,anastera,336652,urn:lsid:nmbe.ch:spidersp:015911,Unknown,Female,2016-07-02,United States,7,0.025,0.008,4.21,0.52,0.45,0.17,9.9,1.3,,,,,40.9,5.8,1.25,0.08,,,
+1974,Araneidae,Araneus,marmoreus,336584,urn:lsid:nmbe.ch:spidersp:015005,Unknown,Female,2015-08-28,Japan,21,0.023,0.011,6.99,1.2,0.5,0.17,8.1,1.4,243.0,285.0,304.0,21.0,48.4,15.1,2.07,0.43,5.8,,
+4969,Pisauridae,Gen.,sp. (OTU0864),2337850,,Unknown,Unknown,2017-01-24,India,12,0.021,0.007,2.85,1.36,0.32,0.04,13.4,5.9,200.0,272.0,301.0,16.0,41.2,8.0,1.31,0.03,9.3,6.3,4.8
+5149,Salticidae,Burmattus,pococki,2337327,urn:lsid:nmbe.ch:spidersp:032593,Unknown,Female,2017-04-10,Japan,7,0.021,0.008,9.44,2.85,0.73,0.11,5.9,1.7,,,,10.0,65.2,14.3,0.56,0.05,,,
+5210,Salticidae,Epeus,sumatranus,2337403,urn:lsid:nmbe.ch:spidersp:044962,Unknown,Male,2017-04-15,Malaysia,7,0.016,0.002,8.46,1.27,0.63,0.07,5.1,0.1,,,,,51.7,13.7,0.56,0.08,,,
+5018,Araneidae,Gen.,sp. (OTU0124),2337812,,Unknown,Unknown,2017-01-25,India,,0.015,0.008,1.01,0.3,0.17,0.05,15.3,2.7,206.0,284.0,306.0,24.0,36.9,25.1,1.58,0.52,10.1,,
+4796,Salticidae,Telamonia,vlijmi,1112492,urn:lsid:nmbe.ch:spidersp:036518,Unknown,Unknown,2016-11-28,Japan,7,0.014,0.002,5.46,0.86,0.49,0.05,6.9,0.4,,,,20.0,61.5,10.1,0.77,0.07,,,
+4791,Thomisidae,Thomisus,kitamurai,2337684,urn:lsid:nmbe.ch:spidersp:031460,Unknown,Female,2016-11-28,Japan,9,0.014,0.004,2.85,0.55,0.31,0.06,9.8,1.5,,,,22.0,39.0,8.5,1.45,0.15,,,
+4070,Salticidae,Yaginumaella,striatipes,2337712,urn:lsid:nmbe.ch:spidersp:036823,Unknown,Female,2016-07-27,Japan,5,0.005,0.001,1.29,0.78,0.79,0.22,28.2,7.8,,,,,18.9,3.3,2.08,0.07,,,
+205,Tetragnathidae,Zhinu,reticuloides,2337810,urn:lsid:nmbe.ch:spidersp:013894,Unknown,Unknown,2014-10-17,Japan,,,,,,,,,,,,,,44.2,8.9,1.08,0.08,,,
+5500,Miturgidae,Prochora,praticola,2337785,urn:lsid:nmbe.ch:spidersp:024226,Unknown,Unknown,2017-05-24,Japan,6,,,,,,,,,,,,,59.1,16.4,0.45,0.05,,,
+200,Araneidae,Cyclosa,argenteoalba,345692,urn:lsid:nmbe.ch:spidersp:015571,Unknown,Female,2014-10-17,Japan,,,,,,,,,,,,,,36.0,7.2,0.93,0.06,,,
+3909,Araneidae,Mecynogea,lemniscata,329906,urn:lsid:nmbe.ch:spidersp:016398,Unknown,Unknown,2016-07-02,United States,6,,,,,,,,,,,,,35.9,9.2,2.57,0.22,,,
+3609,Uloboridae,Miagrammopes,orientalis,2337486,urn:lsid:nmbe.ch:spidersp:006276,Unknown,Female,2016-05-19,Japan,9,,,,,,,,,,,,,33.8,3.3,0.59,0.03,,,
+4125,Theridiidae,Yaginumena,castrata,2337807,urn:lsid:nmbe.ch:spidersp:007362,Unknown,Female,2016-07-28,Japan,3,,,,,,,,,,,,14.0,35.2,8.8,0.64,0.05,,,
+5145,Lycosidae,Pardosa,pseudoannulata,330961,urn:lsid:nmbe.ch:spidersp:018875,Unknown,Female,2017-04-10,Japan,8,,,,,,,,,,,,,19.3,4.4,0.65,0.03,,,
+2798,Araneidae,Cyclosa,mulmeinensis,345697,urn:lsid:nmbe.ch:spidersp:015662,Unknown,Female,2015-11-20,Japan,3,,,,,,,,,,,,19.0,,,,,,,
+5615,Theridiidae,Gen.,sp. (OTU0064),2507284,,Unknown,Female,2017-06-11,China,5,,,,,,,,,,,,,35.8,5.4,0.59,0.03,,,
+1491,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Unknown,2014-10-05,Japan,,,,,,,,,,,,,12.0,,,,,,,
+4757,Salticidae,Carrhotus,sp. (OTU0899),2337330,,Unknown,Unknown,2016-11-08,Japan,5,,,,,,,,,,,,,34.6,2.1,2.53,0.03,,,
+6055,Agelenidae,Agelena,labyrinthica,286032,urn:lsid:nmbe.ch:spidersp:020860,Unknown,Female,2017-07-25,United Kingdom,15,,,,,,,,,,,,,72.8,20.5,0.35,0.03,,,
+229,Araneidae,Cyclosa,sedeculata,1112408,urn:lsid:nmbe.ch:spidersp:015702,Unknown,Unknown,2014-10-19,Japan,,,,,,,,,,,,,,89.3,24.2,0.45,0.06,,,
+4252,Antrodiaetidae,Antrodiaetus,yesoensis,415152,urn:lsid:nmbe.ch:spidersp:000134,Unknown,Unknown,2016-08-05,Japan,12,,,,,,,,,,,,,25.9,7.3,0.37,0.04,,,
+6099,Pholcidae,Pholcus,phalangioides,6932,urn:lsid:nmbe.ch:spidersp:003744,Unknown,Unknown,2016-09-03,Japan,,,,,,,,,,,,,,,,,,,1.6,1.2
+4795,Theridiidae,Chikunia,albipes,1112508,urn:lsid:nmbe.ch:spidersp:037395,Unknown,Female,2016-11-28,Japan,2,,,,,,,,,,,,,57.3,22.9,0.59,0.03,,,
+4242,Tetragnathidae,Meta,japonica,2337482,urn:lsid:nmbe.ch:spidersp:013874,Unknown,Male,2016-08-05,Japan,10,,,,,,,,,,,,,28.3,7.8,0.72,0.07,,,
+290,Araneidae,Neoscona,nautica,258338,urn:lsid:nmbe.ch:spidersp:016729,Unknown,Unknown,2014-10-09,Japan,,,,,,,,,,,,,12.0,,,,,,,
+196,Araneidae,Cyclosa,sedeculata,1112408,urn:lsid:nmbe.ch:spidersp:015702,Unknown,Male,2014-10-17,Japan,,,,,,,,,,,,,,51.3,14.6,0.66,0.09,,,
+202,Theridiidae,Parasteatoda,tepidariorum,114398,urn:lsid:nmbe.ch:spidersp:006870,Unknown,Unknown,2014-10-17,Japan,,,,,,,,,,,,,,52.1,10.7,0.69,0.05,,,
+4676,Araneidae,Trichonephila,clavata,70342,urn:lsid:nmbe.ch:spidersp:013940,Unknown,Female,2016-11-02,China,,,,,,,,,,212.0,275.0,297.0,16.0,40.0,18.6,2.08,0.37,9.9,,
+209,Araneidae,Plebs,sp. 1,,,Unknown,Unknown,2014-10-19,Japan,,,,,,,,,,,,,,39.6,7.7,0.92,0.04,,,
+5567,Araneidae,Araneus,sp. (OTU0080),2507252,,Unknown,Unknown,2017-06-10,China,7,,,,,,,,,,,,8.0,39.8,13.4,0.71,0.11,,,
+5648,Salticidae,Rhene,sp. 1,,,Unknown,Unknown,2017-06-27,Japan,6,,,,,,,,,,,,,31.5,7.1,0.57,0.03,,,
+5243,Thomisidae,Amyciaea,forticeps,486298,urn:lsid:nmbe.ch:spidersp:030145,Unknown,Male,2017-04-16,Malaysia,4,,,,,,,,,,,,,61.6,17.9,0.43,0.02,,,
+6122,Araneidae,Argiope,bruennichi,94029,urn:lsid:nmbe.ch:spidersp:015356,Unknown,Female,2016-10-25,Japan,,,,,,,,,,,,,,,,,,,47.3,3.9
+6146,Linyphiidae,Neriene,emphana,373616,urn:lsid:nmbe.ch:spidersp:011982,Unknown,Female,2017-08-07,Japan,5,,,,,,,,,,,,,36.6,7.0,0.39,0.03,,,
+6115,Araneidae,Araneus,ventricosus,182803,urn:lsid:nmbe.ch:spidersp:015279,Unknown,Unknown,2016-10-06,Japan,,,,,,,,,,,,,,,,,,,53.2,5.4
+5171,Tetragnathidae,Dolichognatha,umbrophila,2026707,urn:lsid:nmbe.ch:spidersp:013624,Unknown,Unknown,2017-04-10,Japan,3,,,,,,,,,,,,,26.7,3.4,0.76,0.06,,,
+6104,Theridiidae,Nihonhimea,japonica,2337769,urn:lsid:nmbe.ch:spidersp:006803,Unknown,Female,2016-09-24,Japan,,,,,,,,,,,,,,,,,,,11.2,5.0
+235,Thomisidae,Oxytate,striatipes,1112455,urn:lsid:nmbe.ch:spidersp:030816,Unknown,Unknown,2014-10-19,Japan,,,,,,,,,,,,,,56.2,11.5,0.89,0.06,,,
+6113,Theridiidae,Ariamnes,cylindrogaster,1112391,urn:lsid:nmbe.ch:spidersp:007025,Unknown,Unknown,2016-10-06,Japan,,,,,,,,,,,,,,,,,,,21.8,12.0
+296,Araneidae,Cyclosa,octotuberculata,1112407,urn:lsid:nmbe.ch:spidersp:015669,Unknown,Unknown,2014-10-09,Japan,,,,,,,,,,,,,15.0,,,,,,,
+6112,Theridiidae,Argyrodes,kumadai,1529484,urn:lsid:nmbe.ch:spidersp:007075,Unknown,Unknown,2016-10-06,Japan,,,,,,,,,,,,,,,,,,,10.6,2.5
+6114,Pisauridae,Dolomedes,silvicola,492290,urn:lsid:nmbe.ch:spidersp:042003,Unknown,Unknown,2016-10-06,Japan,,,,,,,,,,,,,,,,,,,4.1,2.0
+6118,Dictynidae,Dictyna,felis,2337390,urn:lsid:nmbe.ch:spidersp:022276,Unknown,Unknown,2016-10-17,Japan,,,,,,,,,,,,,,,,,,,8.6,4.3
+6253,Thomisidae,Thomisus,labefactus,2337685,urn:lsid:nmbe.ch:spidersp:031463,Unknown,Female,2017-08-23,Japan,,,,,,,,,,,,,,,,,,,32.4,7.3
+1790,Pisauridae,Dolomedes,raptor,93702,urn:lsid:nmbe.ch:spidersp:019645,Unknown,Female,2015-07-21,Japan,22,,,,,,,,,,,,12.0,,,,,,,
+6108,Araneidae,Yaginumia,sia,1112568,urn:lsid:nmbe.ch:spidersp:017156,Unknown,Unknown,2016-09-27,Japan,,,,,,,,,,,,,,,,,,,15.5,4.5
+6100,Oecobiidae,Uroctea,compactilis,348714,urn:lsid:nmbe.ch:spidersp:005987,Unknown,Unknown,2016-09-11,Japan,,,,,,,,,,,,,,,,,,,0.4,0.9
+4830,Oecobiidae,Uroctea,compactilis,348714,urn:lsid:nmbe.ch:spidersp:005987,Unknown,Female,2016-12-04,Japan,,,,,,,,,,,,,,,,,,,1.8,1.6
+331,Araneidae,Yaginumia,sia,1112568,urn:lsid:nmbe.ch:spidersp:017156,Unknown,Unknown,2014-10-09,Japan,,,,,,,,,,239.0,286.0,301.0,,,,,,2.3,,
+6107,Salticidae,Mendoza,elongata,1112529,urn:lsid:nmbe.ch:spidersp:034524,Unknown,Male,2016-09-25,Japan,,,,,,,,,,,,,,,,,,,10.3,3.4
+5972,Tetragnathidae,Tetragnatha,montana,500645,urn:lsid:nmbe.ch:spidersp:014265,Unknown,Female,2017-07-23,United Kingdom,7,,,,,,,,,,,,,,,,,,38.0,6.3
+165,Araneidae,Cyclosa,argenteoalba,345692,urn:lsid:nmbe.ch:spidersp:015571,Unknown,Unknown,2014-10-19,Japan,,,,,,,,,,,,,,37.6,11.9,0.82,0.1,,,
+6109,Tetragnathidae,Tetragnatha,praedonia,1112494,urn:lsid:nmbe.ch:spidersp:014321,Unknown,Female,2016-09-28,Japan,,,,,,,,,,,,,,,,,,,42.9,8.0
+5850,Araneidae,Chorizopes,nipponicus,1112510,urn:lsid:nmbe.ch:spidersp:015534,Unknown,Female,2017-07-12,Japan,4,,,,,,,,,,,,,55.6,8.5,0.41,0.03,,,
+5990,Araneidae,Nuctenea,umbratica,1872065,urn:lsid:nmbe.ch:spidersp:016784,Unknown,Female,2017-07-23,United Kingdom,12,,,,,,,,,,,,,,,,,,49.2,5.7
+6103,Thomisidae,Oxytate,striatipes,1112455,urn:lsid:nmbe.ch:spidersp:030816,Unknown,Unknown,2016-09-22,Japan,,,,,,,,,,,,,,,,,,,2.2,3.6
+6120,Araneidae,Neoscona,mellotteei,1968900,urn:lsid:nmbe.ch:spidersp:016721,Unknown,Unknown,2016-10-22,Japan,,,,,,,,,,,,,,,,,,,35.5,5.7
+6110,Araneidae,Neoscona,nautica,258338,urn:lsid:nmbe.ch:spidersp:016729,Unknown,Unknown,2016-10-04,Japan,,,,,,,,,,,,,,,,,,,33.5,9.4
+6125,Philodromidae,Philodromus,spinitarsis,1112462,urn:lsid:nmbe.ch:spidersp:029952,Unknown,Male,2016-11-20,Japan,,,,,,,,,,,,,,,,,,,6.6,4.7
+5340,Theraphosidae,Gen.,sp. 1,,,Unknown,Unknown,2017-04-17,Malaysia,8,,,,,,,,,195.0,242.0,280.0,,,,,,4.0,,
