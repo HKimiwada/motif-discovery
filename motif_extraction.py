@@ -93,7 +93,5 @@ with open(outfile, 'w') as out:
 
 print(f"Wrote {len(unique)} motif candidates to {outfile}")
 
-###############################################
-# Code for motif EDA
-###############################################
+
 
