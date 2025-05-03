@@ -1,4 +1,22 @@
 # Combines Motif Extraction/Validation pipeline for batched processing.
+"""
+Template:
+python motif_pipeline.py \
+    --fasta_dir path/to/your/cluster_files \
+    --validation_csv path/to/your/validation_dataset.csv \
+    --master_fasta path/to/your/spider-silkome-database.v1.prot.fasta \
+    --output_dir path/to/your/output_folder \
+    --conda_env your_memesuite_env_name \
+    
+In my env:
+python motif_pipeline.py \
+    --fasta_dir ./Data/v0_cluster_windows_15mers \
+    --validation_csv ./Data/validation_dataset.csv \
+    --master_fasta ./Data/spider-silkome-database.v1.prot.fasta \
+    --output_dir ./Results/v0_Pipeline_Output \
+    --conda_env memesuite \
+    --generate_plots
+"""
 import os
 import subprocess
 import re
