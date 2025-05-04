@@ -1,0 +1,106 @@
+<STREME version="5.5.7" release="Wed Jun 19 13:59:04 2024 -0700">
+  <model>
+    <command_line>streme --protein --p ./Data/v1_cluster_windows_15mers/cluster_17810.fasta --minw 3 --maxw 15 --thresh 0.05 --oc ./Results/v1_Top500_Run_20250504_162200/streme_out_cluster_17810</command_line>
+    <train_positives count="68" positions="1020" maxlen="15" file="./Data/v1_cluster_windows_15mers/cluster_17810.fasta"/>
+    <train_negatives count="68" positions="1020" from="shuffled"/>
+    <test_positives count="7" positions="105"/>
+    <test_negatives count="7" positions="105"/>
+    <alphabet name="Protein" like="protein">
+      <letter id="A" symbol="A" name="Alanine" colour="0000CC"/>
+      <letter id="C" symbol="C" name="Cysteine" colour="0000CC"/>
+      <letter id="D" symbol="D" name="Aspartic acid" colour="FF00FF"/>
+      <letter id="E" symbol="E" name="Glutamic acid" colour="FF00FF"/>
+      <letter id="F" symbol="F" name="Phenylalanine" colour="0000CC"/>
+      <letter id="G" symbol="G" name="Glycine" colour="FFB300"/>
+      <letter id="H" symbol="H" name="Histidine" colour="FFCCCC"/>
+      <letter id="I" symbol="I" name="Isoleucine" colour="0000CC"/>
+      <letter id="K" symbol="K" name="Lysine" colour="CC0000"/>
+      <letter id="L" symbol="L" name="Leucine" colour="0000CC"/>
+      <letter id="M" symbol="M" name="Methionine" colour="0000CC"/>
+      <letter id="N" symbol="N" name="Asparagine" colour="008000"/>
+      <letter id="P" symbol="P" name="Proline" colour="FFFF00"/>
+      <letter id="Q" symbol="Q" name="Glutamine" colour="008000"/>
+      <letter id="R" symbol="R" name="Arginine" colour="CC0000"/>
+      <letter id="S" symbol="S" name="Serine" colour="008000"/>
+      <letter id="T" symbol="T" name="Threonine" colour="008000"/>
+      <letter id="V" symbol="V" name="Valine" colour="0000CC"/>
+      <letter id="W" symbol="W" name="Tryptophan" colour="0000CC"/>
+      <letter id="Y" symbol="Y" name="Tyrosine" colour="33E6CC"/>
+      <letter id="X" symbol="X" aliases="*." equals="ACDEFGHIKLMNPQRSTVWY" name="Any amino acid"/>
+      <letter id="B" symbol="B" equals="DN" name="Asparagine or Aspartic acid"/>
+      <letter id="Z" symbol="Z" equals="EQ" name="Glutamine or Glutamic acid"/>
+      <letter id="J" symbol="J" equals="IL" name="Leucine or Isoleucine"/>
+    </alphabet>
+    <strands>none</strands>
+    <sequence_db A="0.142" C="0" D="0" E="0" F="0" G="0.0667" H="0" I="0.00444" K="0" L="0.0667" M="0" N="0.00178" P="0" Q="0.00178" R="0.132" S="0.434" T="0.0267" V="0.124" W="0" Y="0"/>
+    <background_frequencies source="--negatives--" order="0">
+      <alphabet_array>
+        <value letter_id="A">0.142</value>
+        <value letter_id="C">4.44e-05</value>
+        <value letter_id="D">4.44e-05</value>
+        <value letter_id="E">4.44e-05</value>
+        <value letter_id="F">4.44e-05</value>
+        <value letter_id="G">0.0667</value>
+        <value letter_id="H">4.44e-05</value>
+        <value letter_id="I">0.00449</value>
+        <value letter_id="K">4.44e-05</value>
+        <value letter_id="L">0.0667</value>
+        <value letter_id="M">4.44e-05</value>
+        <value letter_id="N">0.00182</value>
+        <value letter_id="P">4.44e-05</value>
+        <value letter_id="Q">0.00182</value>
+        <value letter_id="R">0.132</value>
+        <value letter_id="S">0.433</value>
+        <value letter_id="T">0.0267</value>
+        <value letter_id="V">0.124</value>
+        <value letter_id="W">4.44e-05</value>
+        <value letter_id="Y">4.44e-05</value>
+      </alphabet_array>
+    </background_frequencies>
+    <stop thresh_type="pvalue" thresh="0.05"/>
+    <objfun>Differential Enrichment</objfun>
+    <test>Fisher Exact Test</test>
+    <minw>3</minw>
+    <maxw>15</maxw>
+    <kmer>1</kmer>
+    <hofract>0.1</hofract>
+    <neval>25</neval>
+    <nref>4</nref>
+    <niter>20</niter>
+    <patience>3</patience>
+    <seed>0</seed>
+    <notrim>no</notrim>
+    <useer>no</useer>
+    <minscore>0</minscore>
+    <ignore_depth>5</ignore_depth>
+    <nsubsets>1</nsubsets>
+    <min_pal_ratio>0.85</min_pal_ratio>
+    <max_pal_ed>5</max_pal_ed>
+    <cand>no</cand>
+    <experimental>no</experimental>
+    <totallength>0</totallength>
+    <align>center</align>
+    <host>VM-8b0b7afd3b</host>
+  </model>
+  <motifs>
+    <motif id="1-VSRLSSGAASSRVSS" alt="STREME-1" width="15" initial_width="15" seed="VSRLSSGAASSRVSS" score_threshold="14.9715" npassing="75" train_pos_count="68" train_neg_count="0" train_log_pvalue="-39.7745" train_pvalue="1.7e-040" train_dtc="-1.0" train_bernoulli="-1" test_pos_count="7" test_neg_count="0" test_log_pvalue="-3.53555" test_pvalue="2.9e-004" test_log_evalue="-3.53555" test_evalue="2.9e-004" test_dtc="-1.0" test_bernoulli="-1" is_palindromic="n/a" elapsed_time="0.0" total_sites="68" site_distr=" 68" max_sites="1" site_hist=" 0 68">
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.9204" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.921046" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.91515" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.91515" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.92201" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.92201" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.921046" S="0.0394015" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.0394015" T="0.00242646" V="0.9204" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+      <pos A="0.0129187" C="4.03652e-06" D="4.03652e-06" E="4.03652e-06" F="4.03652e-06" G="0.00605933" H="4.03652e-06" I="0.000407743" K="4.03652e-06" L="0.00605933" M="4.03652e-06" N="0.000165552" P="4.03652e-06" Q="0.000165552" R="0.011955" S="0.948492" T="0.00242646" V="0.0113095" W="4.03652e-06" Y="4.03652e-06"/>
+    </motif>
+  </motifs>
+  <reason_for_stopping>Stopped because the next motif had no positive sites with scores > 0.</reason_for_stopping>
+  <run_time cpu="0.04"/>
+</STREME>
