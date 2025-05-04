@@ -9,7 +9,7 @@ A computational framework for identifying and validating sequence motifs in spid
 This repository implements a fully automated pipeline for:
 
 1. Generating residue embeddings with a fine‑tuned ESM-2 model.
-2. Clustering embeddings to group similar residue contexts.
+2. Clustering embeddings to group similar residue contexts. (v0: K-means, v1: HDBSCAN)
 3. Extracting fixed-length (15‑mer) windows around each residue cluster.
 4. Running the MEME Suite’s **STREME** algorithm on clusters to discover candidate motifs.
 5. Validating discovered motifs by counting their abundance in a validation dataset and statistically correlating motif counts with measured mechanical properties of spider silk fibers.
