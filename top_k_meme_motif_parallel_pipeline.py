@@ -1,27 +1,20 @@
-# (Parallel Version - Adapted for Many Small Clusters with Top K Selection)
+# (Parallel Version - Adapted for Many Small Clusters with Top K Selection - USING MEME)
 # Combines Motif Extraction/Validation pipeline for batched processing - PARALLELIZED.
 """
-Example Command (Using Top K):
-python top_k_streme_motif_parallel_pipeline.py \
+Example Command (Using Top K with MEME):
+python top_k_meme_motif_parallel_pipeline.py \
     --fasta_dir ./Data/v1_cluster_windows_15mers \
     --validation_csv ./Data/validation_dataset.csv \
     --master_fasta ./Data/spider-silkome-database.v1.prot.fasta \
-    --output_dir ./Results/v1_Top10000_Run \
+    --output_dir ./Results/v1_Top500_MEME_Run \
     --conda_env memesuite \
-    --top_k_clusters 10000 \
+    --top_k_clusters 500 \
+    --meme_nmotifs 5 \
+    --meme_mod anr \
+    --evalue_thresh 0.05 \
     --generate_plots \
     --num_workers 8
 
-Example Command (Using Minimum Size):
-python motif_parallel_pipeline_topk.py \
-    --fasta_dir ./Data/hdbscan_cluster_windows \
-    --validation_csv ./Data/validation_dataset.csv \
-    --master_fasta ./Data/spider-silkome-database.v1.prot.fasta \
-    --output_dir ./Results/v1_MinSize20_Run \
-    --conda_env memesuite \
-    --min_cluster_size 20 \
-    --generate_plots \
-    --num_workers 8
 """
 import os
 import subprocess
@@ -47,129 +40,186 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(processName)s - 
 
 # --- Function Definitions ---
 
-def run_streme(fasta_file, output_dir, minw, maxw, thresh, conda_env_name):
-    """Runs STREME on a given FASTA file using a specified conda environment."""
+def run_meme(fasta_file, output_dir, minw, maxw, mod, nmotifs, evt, conda_env_name):
+    """Runs MEME on a given FASTA file using a specified conda environment."""
     base_name = os.path.splitext(os.path.basename(fasta_file))[0]
     # NOTE: output_dir here is the UNIQUE run directory already
-    streme_output_subdir = os.path.join(output_dir, f"streme_out_{base_name}")
-    os.makedirs(streme_output_subdir, exist_ok=True) # Create specific subdir for this run
+    meme_output_subdir = os.path.join(output_dir, f"meme_out_{base_name}")
+    # MEME uses -oc which behaves like mkdir -p
+    # os.makedirs(meme_output_subdir, exist_ok=True) # Not strictly needed if using -oc
 
     cmd = [
         'conda', 'run', '-n', conda_env_name, '--no-capture-output',
-        'streme',
-        '--protein',
-        '--p', fasta_file,
-        '--minw', str(minw),
-        '--maxw', str(maxw),
-        '--thresh', str(thresh),
-        '--oc', streme_output_subdir
+        'meme',
+        fasta_file, # Input file directly after 'meme'
+        '-protein', # Specify protein sequences
+        '-oc', meme_output_subdir, # Output directory (will be created)
+        '-mod', str(mod), # Motif distribution model (oops, zoops, anr)
+        '-nmotifs', str(nmotifs), # Max number of motifs to find
+        '-minw', str(minw), # Minimum motif width
+        '-maxw', str(maxw), # Maximum motif width
+        '-evt', str(evt), # E-value threshold for reporting motifs
+        '-nostatus', # Suppress progress status to stderr
+        '-time', '1800', # Add timeout (e.g., 30 minutes)
+        # '-p', '1' # Explicitly run sequentially within the worker process
+                     # Avoids oversubscribing cores if num_workers is high.
+                     # Remove if you want MEME to use multiple cores *within* a worker.
     ]
 
     logger = logging.getLogger() # Get root logger
-    logger.info(f"[{base_name}] Running STREME for {fasta_file}...")
+    logger.info(f"[{base_name}] Running MEME for {fasta_file}...")
     # logger.debug(f"[{base_name}] Command: {' '.join(cmd)}") # Log full command only if debugging
 
     try:
         # Basic check for empty file before running
         if os.path.getsize(fasta_file) == 0:
-            logger.warning(f"[{base_name}] Input FASTA file is empty. Skipping STREME.")
+            logger.warning(f"[{base_name}] Input FASTA file is empty. Skipping MEME.")
             return None
 
-        result = subprocess.run(cmd, check=True, capture_output=True, text=True, timeout=1800) # Added 30min timeout per STREME run
+        result = subprocess.run(cmd, check=True, capture_output=True, text=True) # MEME timeout is within the command args
 
-        # Reduce logging verbosity in parallel mode for success cases
-        # stdout_summary = (result.stdout[:500] + '...') if len(result.stdout) > 500 else result.stdout
-        # logger.info(f"[{base_name}] STREME stdout summary:\n{stdout_summary}")
-        # if result.stderr:
-        #     stderr_summary = (result.stderr[:500] + '...') if len(result.stderr) > 500 else result.stderr
-        #     logger.warning(f"[{base_name}] STREME stderr summary:\n{stderr_summary}")
+        # Check MEME's stderr for potential warnings even on success (exit code 0)
+        if result.stderr:
+             stderr_summary = (result.stderr[:500] + '...') if len(result.stderr) > 500 else result.stderr
+             if "warning" in stderr_summary.lower(): # Basic check for warnings
+                 logger.warning(f"[{base_name}] MEME stderr reported warnings:\n{stderr_summary}")
+             # else: # Optionally log non-warning stderr if debugging
+             #    logger.debug(f"[{base_name}] MEME stderr:\n{stderr_summary}")
 
-        logger.info(f"[{base_name}] STREME completed successfully. Output in {streme_output_subdir}")
-        return os.path.join(streme_output_subdir, 'streme.txt')
+
+        logger.info(f"[{base_name}] MEME completed successfully. Output in {meme_output_subdir}")
+        # MEME primarily outputs HTML, but meme.txt contains parseable motif info
+        meme_txt_path = os.path.join(meme_output_subdir, 'meme.txt')
+        if os.path.exists(meme_txt_path):
+            return meme_txt_path
+        else:
+            logger.error(f"[{base_name}] MEME ran successfully but meme.txt output file not found at {meme_txt_path}")
+            return None
+
     except FileNotFoundError:
         logger.error(f"[{base_name}] Error: 'conda' command not found. Is Conda installed and in PATH?")
         raise # Reraise critical error
-    except subprocess.TimeoutExpired:
-         logger.error(f"[{base_name}] STREME timed out after 30 minutes for {fasta_file}.")
-         return None # Indicate failure
+    # Timeout is handled by MEME itself via '-time' argument, less likely to hit subprocess timeout unless MEME hangs completely
     except subprocess.CalledProcessError as e:
-        logger.error(f"[{base_name}] STREME failed with exit code {e.returncode}.")
+        logger.error(f"[{base_name}] MEME failed with exit code {e.returncode}.")
         # Log full error output upon failure
         logger.error(f"[{base_name}] STDOUT:\n{e.stdout}")
         logger.error(f"[{base_name}] STDERR:\n{e.stderr}")
         return None # Indicate failure for this cluster
     except Exception as e:
-        logger.error(f"[{base_name}] An unexpected error occurred during STREME execution: {e}")
+        logger.error(f"[{base_name}] An unexpected error occurred during MEME execution: {e}")
         raise # Reraise unexpected errors
 
-def extract_motifs(streme_txt_file, cluster_name): # Add cluster_name for logging
-    """Extracts unique motif consensus sequences from a streme.txt file."""
+def extract_motifs(meme_txt_file, cluster_name):
+    """Extracts unique motif consensus sequences from a meme.txt file."""
     logger = logging.getLogger()
-    if not streme_txt_file or not os.path.exists(streme_txt_file):
-        logger.warning(f"[{cluster_name}] STREME output file not found or not provided: {streme_txt_file}. Skipping motif extraction.")
+    if not meme_txt_file or not os.path.exists(meme_txt_file):
+        logger.warning(f"[{cluster_name}] MEME output file not found or not provided: {meme_txt_file}. Skipping motif extraction.")
         return []
 
     consensi = []
     try:
-        with open(streme_txt_file, 'r') as fh:
+        with open(meme_txt_file, 'r') as fh:
             in_motif_section = False
+            current_motif_lines = []
             for line in fh:
-                 # Find the start of the motif section
-                if line.strip() == "MEME-formatted motifs":
-                    in_motif_section = True
-                    continue # Skip this header line
-                if in_motif_section:
-                    # Stop if we leave the motif section
-                    if not line.startswith("MOTIF"):
-                         # Check if we encountered the end or just an empty line within
-                         if line.strip() == "" or line.strip().startswith("COMMAND"): # Example end markers
-                             break
-                         else:
-                              continue # Skip lines within motif block that aren't MOTIF lines
+                # Find the start of the command line section which follows motifs
+                if line.startswith("COMMAND LINE SUMMARY"):
+                    break # Stop processing after motifs
 
-                    if line.startswith('MOTIF '):
-                        parts = line.split()
-                        if len(parts) > 1:
-                            # Format can be "MOTIF <rank>-<consensus>" or just "MOTIF <consensus>"
-                            rank_dash_consensus = parts[1]
-                            if '-' in rank_dash_consensus and rank_dash_consensus.count('-') == 1:
-                                try:
-                                    # Attempt to split by the first dash, assuming format like 1-XXXX
-                                    rank, consensus = rank_dash_consensus.split('-', 1)
-                                    int(rank) # Check if the first part is indeed a number (rank)
+                if line.startswith('MOTIF '):
+                    # Process the previous motif block if one exists
+                    if current_motif_lines:
+                         # Try to find the consensus from MOTIF line itself (MEME 5 format)
+                         parts = current_motif_lines[0].split() # First line is MOTIF line
+                         if len(parts) > 1:
+                              # Expecting "MOTIF <name>" or "MOTIF <name> <altname>"
+                              # The actual consensus sequence might be on later lines (older MEME?)
+                              # or inferred from the name (STREME like "MOTIF 1-CONS")
+                              # Or often "MOTIF <name> width=... alength=... etc"
+                              potential_consensus_name = parts[1]
+                              # Check if it follows STREME "rank-consensus" format
+                              if '-' in potential_consensus_name and potential_consensus_name.count('-') == 1:
+                                  try:
+                                      rank, consensus = potential_consensus_name.split('-', 1)
+                                      int(rank)
+                                      consensi.append(consensus)
+                                      logger.debug(f"[{cluster_name}] Parsed consensus (STREME style): {consensus}")
+                                  except ValueError:
+                                      # Doesn't look like rank-consensus, treat name as placeholder
+                                      # Look for consensus on subsequent lines
+                                      pass
+                              # Try to find consensus on subsequent "Multilevel consensus sequence" line (MEME 5+)
+                              found_consensus_line = False
+                              for motif_line in current_motif_lines[1:]: # Check lines after MOTIF line
+                                  if "Multilevel consensus sequence" in motif_line:
+                                       consensus = motif_line.split(":")[-1].strip()
+                                       if consensus:
+                                           consensi.append(consensus)
+                                           logger.debug(f"[{cluster_name}] Parsed consensus (MEME multilevel): {consensus}")
+                                           found_consensus_line = True
+                                           break
+                              if not found_consensus_line:
+                                   logger.warning(f"[{cluster_name}] Could not determine consensus sequence for motif starting: {current_motif_lines[0].strip()}")
+
+
+                         current_motif_lines = [line] # Start new motif block
+                    else:
+                         current_motif_lines = [line] # Start the first motif block
+
+                elif current_motif_lines: # If we are inside a motif block
+                    current_motif_lines.append(line)
+
+
+            # Process the last motif block after loop finishes
+            if current_motif_lines:
+                parts = current_motif_lines[0].split()
+                if len(parts) > 1:
+                    potential_consensus_name = parts[1]
+                    found_consensus_line = False
+                    if '-' in potential_consensus_name and potential_consensus_name.count('-') == 1:
+                        try:
+                            rank, consensus = potential_consensus_name.split('-', 1)
+                            int(rank)
+                            consensi.append(consensus)
+                            found_consensus_line = True
+                            logger.debug(f"[{cluster_name}] Parsed consensus (STREME style): {consensus}")
+                        except ValueError: pass # Fall through to check multilevel line
+                    if not found_consensus_line:
+                        for motif_line in current_motif_lines[1:]:
+                            if "Multilevel consensus sequence" in motif_line:
+                                consensus = motif_line.split(":")[-1].strip()
+                                if consensus:
                                     consensi.append(consensus)
-                                except ValueError:
-                                    # If split fails or first part isn't int, assume whole thing is consensus
-                                    logger.warning(f"[{cluster_name}] Could not parse rank, assuming '{rank_dash_consensus}' is the consensus from line: {line.strip()}")
-                                    consensi.append(rank_dash_consensus)
+                                    logger.debug(f"[{cluster_name}] Parsed consensus (MEME multilevel): {consensus}")
+                                    found_consensus_line = True
+                                    break
+                    if not found_consensus_line:
+                         logger.warning(f"[{cluster_name}] Could not determine consensus sequence for final motif block starting: {current_motif_lines[0].strip()}")
 
-                            else:
-                                # If no dash or multiple dashes, assume the whole part after MOTIF is the consensus
-                                consensus = rank_dash_consensus
-                                consensi.append(consensus)
-                                logger.debug(f"[{cluster_name}] Parsed consensus '{consensus}' from line: {line.strip()}")
-
-                        else:
-                            logger.warning(f"[{cluster_name}] Unexpected MOTIF line format: {line.strip()}")
-
-        # Deduplicate while preserving order (important if STREME ranks matter)
+        # Deduplicate while preserving order
         seen = set()
-        unique_motifs = [c for c in consensi if not (c in seen or seen.add(c))]
-
+        unique_motifs = [c for c in consensi if c and not (c in seen or seen.add(c))] # Ensure c is not empty
 
         # Save the extracted unique motifs to a file in the same directory
-        motif_list_file = os.path.join(os.path.dirname(streme_txt_file), 'motif_candidates_export.txt')
+        output_dir = os.path.dirname(meme_txt_file)
+        motif_list_file = os.path.join(output_dir, 'motif_candidates_export.txt')
         with open(motif_list_file, 'w') as out:
             for c in unique_motifs:
                 out.write(c + '\n')
-        logger.info(f"[{cluster_name}] Extracted {len(unique_motifs)} unique motif candidates from {streme_txt_file} and saved to {motif_list_file}")
+        logger.info(f"[{cluster_name}] Extracted {len(unique_motifs)} unique motif candidates from {meme_txt_file} and saved to {motif_list_file}")
 
         return unique_motifs
     except Exception as e:
-        logger.error(f"[{cluster_name}] Failed to extract motifs from {streme_txt_file}: {e}", exc_info=True)
+        logger.error(f"[{cluster_name}] Failed to extract motifs from {meme_txt_file}: {e}", exc_info=True)
         return []
 
-
+# --- load_validation_data, count_and_correlate, visualize_correlations functions remain unchanged ---
+# Paste the unchanged functions here:
+# def load_validation_data(...): ...
+# def count_and_correlate(...): ...
+# def visualize_correlations(...): ...
+# --- [Functions pasted below - identical to previous version] ---
 def load_validation_data(validation_csv_path, master_fasta_path):
     """Loads validation data and merges sequences from the master FASTA."""
     # This runs only once in the main process, logging is fine here
@@ -437,7 +487,6 @@ def count_and_correlate(val_df, motifs, properties, cluster_name):
 
     return corr_df
 
-
 def visualize_correlations(val_df_with_counts, corr_df, output_plot_dir, cluster_name): # Add cluster_name
     """Generates scatter plots for significant correlations."""
     # Note: This function now runs within the worker process.
@@ -529,89 +578,78 @@ def visualize_correlations(val_df_with_counts, corr_df, output_plot_dir, cluster
             plt.close() # Ensure figure is closed to free memory
 
     logger.info(f"[{cluster_name}] Saved {plotted_count} plots to {output_plot_dir}")
+# --- [End of unchanged functions] ---
 
 
 # --- Worker Function for Parallel Processing ---
 
 def process_single_cluster(fasta_file, validation_df, unique_output_dir, args):
-    """Worker function to process a single cluster FASTA file."""
-    # This runs in a separate process. Get logger instance.
-    # Setup needs to happen per-process if using advanced handlers,
-    # but basicConfig from main process usually suffices for simple logging.
+    """Worker function to process a single cluster FASTA file using MEME."""
     logger = logging.getLogger()
     cluster_name = os.path.splitext(os.path.basename(fasta_file))[0]
-    logger.info(f"--- [{cluster_name}] Starting processing ---")
+    logger.info(f"--- [{cluster_name}] Starting processing (using MEME) ---")
     start_time_cluster = time.time()
 
     cluster_result_df = None # Initialize result DataFrame for this cluster
 
     try:
-        # 1. Run STREME (or use existing if --skip_streme)
-        streme_output_file = None
-        streme_output_base = os.path.join(unique_output_dir, f"streme_out_{cluster_name}")
+        # 1. Run MEME (or use existing if --skip_meme)
+        # Note: --skip_streme flag reused, maybe rename later if needed.
+        meme_output_file = None
+        meme_output_base = os.path.join(unique_output_dir, f"meme_out_{cluster_name}")
 
-        if not args.skip_streme:
-            streme_output_file = run_streme(
-                fasta_file, unique_output_dir, args.minw, args.maxw, args.thresh, args.conda_env
+        if not args.skip_meme: # Using skip_meme argument name now
+            meme_output_file = run_meme(
+                fasta_file, unique_output_dir, args.minw, args.maxw,
+                args.meme_mod, args.meme_nmotifs, args.evalue_thresh, args.conda_env
             )
-            if streme_output_file is None:
-                logger.warning(f"[{cluster_name}] STREME failed or was skipped due to empty file. Aborting processing for this cluster.")
+            if meme_output_file is None:
+                logger.warning(f"[{cluster_name}] MEME failed or was skipped due to empty file. Aborting processing for this cluster.")
                 return None # Indicate failure or skip
         else:
-            # Try to find existing streme.txt if skipping run
-            potential_streme_file = os.path.join(streme_output_base, 'streme.txt')
-            if os.path.exists(potential_streme_file):
-                streme_output_file = potential_streme_file
-                logger.info(f"[{cluster_name}] Skipping STREME run, using existing file: {streme_output_file}")
+            # Try to find existing meme.txt if skipping run
+            potential_meme_file = os.path.join(meme_output_base, 'meme.txt')
+            if os.path.exists(potential_meme_file):
+                meme_output_file = potential_meme_file
+                logger.info(f"[{cluster_name}] Skipping MEME run, using existing file: {meme_output_file}")
             else:
-                logger.warning(f"[{cluster_name}] --skip_streme flag set, but existing file not found: {potential_streme_file}. Cannot process this cluster.")
-                return None # Cannot proceed without STREME results
+                logger.warning(f"[{cluster_name}] --skip_meme flag set, but existing file not found: {potential_meme_file}. Cannot process this cluster.")
+                return None # Cannot proceed without MEME results
 
 
-        # Check again if STREME output exists (might have failed or been skipped)
-        if not streme_output_file:
-             logger.warning(f"[{cluster_name}] No STREME output file available. Skipping motif extraction and validation.")
+        # Check again if MEME output exists (might have failed or been skipped)
+        if not meme_output_file:
+             logger.warning(f"[{cluster_name}] No MEME output file available. Skipping motif extraction and validation.")
              return None
 
 
         # 2. Extract Motifs
-        motifs = extract_motifs(streme_output_file, cluster_name)
+        motifs = extract_motifs(meme_output_file, cluster_name) # Should parse meme.txt
         if not motifs:
-            logger.warning(f"[{cluster_name}] No motifs extracted from {streme_output_file}. Skipping validation.")
+            logger.warning(f"[{cluster_name}] No motifs extracted from {meme_output_file}. Skipping validation.")
             return None # No motifs to validate
 
 
         # 3. Count Motifs and Correlate
-        # Pass the original validation_df, count_and_correlate will make a copy
         cluster_corr_df = count_and_correlate(validation_df, motifs, args.properties, cluster_name)
 
 
         # Check if correlation produced results before plotting
         if cluster_corr_df is not None and not cluster_corr_df.empty:
-             # Store results to be returned
-             cluster_result_df = cluster_corr_df
+             cluster_result_df = cluster_corr_df # Store results
 
              # 4. Visualize Significant Correlations (if requested and results exist)
              if args.generate_plots:
-                 # Note: visualize_correlations needs the validation_df *with counts/freqs*
-                 # We need to get the df modified by count_and_correlate.
-                 # Let's modify count_and_correlate to return both df and corr_df,
-                 # OR recalculate counts here just for plotting (less efficient).
-                 # --> Simpler for now: Assume count_and_correlate doesn't modify val_df in place.
-                 # We need to pass the necessary data to visualize_correlations.
-                 # Let's recalculate counts needed for plotting *if* plots are needed.
-                 # This is inefficient but avoids complex data passing between functions.
-
                  logger.info(f"[{cluster_name}] Preparing data for plotting significant correlations...")
                  df_for_plotting = validation_df.copy()
                  significant_motifs = cluster_corr_df[cluster_corr_df['significant_pearson']]['motif'].unique()
 
+                 # Recalculate frequencies for plotting if needed
                  for m in significant_motifs:
                      freq_col = f"freq_{m}"
-                     if freq_col not in df_for_plotting.columns: # Check if already calculated (unlikely with current structure)
+                     if freq_col not in df_for_plotting.columns:
                         try:
                             esc_m = re.escape(m)
-                            # Recalculate frequency ONLY for significant motifs needed for plots
                             df_for_plotting[f"count_{m}"] = df_for_plotting["sequence"].apply(
                                 lambda s: len(re.findall(f"(?={esc_m})", str(s))) if pd.notna(s) else 0
                             )
@@ -619,19 +657,17 @@ def process_single_cluster(fasta_file, validation_df, unique_output_dir, args):
                                                                     df_for_plotting[f"count_{m}"] / df_for_plotting["seq_length"], 0)
                         except Exception as e:
                             logger.error(f"[{cluster_name}] Error recalculating frequency for plotting motif '{m}': {e}")
-                            # Remove potentially incomplete columns
                             df_for_plotting.drop(columns=[f"count_{m}", freq_col], errors='ignore', inplace=True)
 
-
-                 plot_output_dir = os.path.join(unique_output_dir, f"plots_{cluster_name}")
-                 # Pass the df containing calculated frequencies for plotting
+                 # Define plot output dir based on MEME output base
+                 plot_output_dir = os.path.join(unique_output_dir, f"plots_meme_{cluster_name}")
                  visualize_correlations(df_for_plotting, cluster_corr_df, plot_output_dir, cluster_name)
         else:
              logger.info(f"[{cluster_name}] No correlation results generated. Skipping plotting.")
 
 
         elapsed_time = time.time() - start_time_cluster
-        logger.info(f"--- [{cluster_name}] Finished processing in {elapsed_time:.2f} seconds ---")
+        logger.info(f"--- [{cluster_name}] Finished processing in {elapsed_time:.2f} seconds (using MEME) ---")
         return cluster_result_df # Return the correlation results DataFrame (or None if failed earlier)
 
     except Exception as e:
@@ -640,7 +676,7 @@ def process_single_cluster(fasta_file, validation_df, unique_output_dir, args):
         return None # Indicate failure
 
 
-# --- Helper function to count sequences ---
+# --- Helper function to count sequences (Unchanged) ---
 def count_fasta_sequences(fasta_path):
     """Counts the number of sequences in a FASTA file."""
     count = 0
@@ -650,19 +686,18 @@ def count_fasta_sequences(fasta_path):
                 if line.startswith(">"):
                     count += 1
     except FileNotFoundError:
-        # Logged where called if necessary
         return 0
     except Exception as e:
         logging.warning(f"Could not count sequences in {os.path.basename(fasta_path)}: {e}")
-        return 0 # Treat as error or empty
+        return 0
     return count
 
 
 # --- Main Execution Logic ---
 def main():
     parser = argparse.ArgumentParser(
-        description="Automated Motif Discovery and Validation Pipeline (Parallelized, Top-K/Min-Size Selection).",
-        formatter_class=argparse.ArgumentDefaultsHelpFormatter # Show defaults in help
+        description="Automated Motif Discovery (MEME) and Validation Pipeline (Parallelized, Top-K/Min-Size Selection).",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter
         )
 
     # --- Input/Output Arguments ---
@@ -670,20 +705,22 @@ def main():
     parser.add_argument("--validation_csv", required=True, help="Path to the validation dataset CSV file (must contain 'idv_id' and property columns).")
     parser.add_argument("--master_fasta", required=True, help="Path to the master protein FASTA file (headers like '>id|...' or '>id').")
     parser.add_argument("--output_dir", required=True, help="Base directory path for storing outputs. A timestamp will be appended.")
-    parser.add_argument("--results_file", default="combined_correlation_results.csv", help="Filename for the final combined correlation results table.")
+    parser.add_argument("--results_file", default="combined_correlation_results_meme.csv", help="Filename for the final combined correlation results table.")
 
     # --- Cluster Selection Arguments ---
     parser.add_argument("--min_cluster_size", type=int, default=None,
-                        help="Process clusters with at least this many sequences (ignored if --top_k_clusters is set).")
+                        help="Process clusters with at least this many sequences (ignored if --top_k_clusters is set). Recommended >= 5 for MEME.")
     parser.add_argument("--top_k_clusters", type=int, default=None,
                         help="Process only the top K largest clusters (takes precedence over --min_cluster_size).")
 
-    # --- STREME Arguments ---
+    # --- MEME Arguments --- ### MODIFIED FOR MEME ###
     parser.add_argument("--conda_env", required=True, help="Name of the Conda environment containing MEME Suite.")
-    parser.add_argument("--minw", type=int, default=3, help="Minimum motif width for STREME.")
-    parser.add_argument("--maxw", type=int, default=15, help="Maximum motif width for STREME.")
-    parser.add_argument("--thresh", type=float, default=0.05, help="E-value threshold for STREME motif reporting.")
-    parser.add_argument("--skip_streme", action='store_true', help="Skip running STREME and use existing streme.txt files (expects files in output_dir/streme_out_*/streme.txt).")
+    parser.add_argument("--minw", type=int, default=3, help="Minimum motif width for MEME.")
+    parser.add_argument("--maxw", type=int, default=15, help="Maximum motif width for MEME.")
+    parser.add_argument("--evalue_thresh", type=float, default=0.05, help="E-value reporting threshold for MEME (-evt).")
+    parser.add_argument("--meme_nmotifs", type=int, default=5, help="Maximum number of motifs for MEME to find (-nmotifs).")
+    parser.add_argument("--meme_mod", type=str, default='anr', choices=['oops', 'zoops', 'anr'], help="Motif distribution model for MEME (-mod). 'anr' is generally recommended.")
+    parser.add_argument("--skip_meme", action='store_true', help="Skip running MEME and use existing meme.txt files (expects files in output_dir/meme_out_*/meme.txt).")
 
 
     # --- Validation Arguments ---
@@ -694,7 +731,7 @@ def main():
     parser.add_argument("--generate_plots", action='store_true', help="Generate scatter plots for significant correlations (Pearson p_adj <= 0.05).")
 
     # --- Parallelism Control ---
-    parser.add_argument("--num_workers", type=int, default=None, # Default to None, will use os.cpu_count()
+    parser.add_argument("--num_workers", type=int, default=None,
                         help="Number of parallel processes (workers) to use. Defaults to the number of CPU cores.")
 
 
@@ -705,7 +742,7 @@ def main():
     pipeline_start_time = time.time()
     base_output_dir = args.output_dir
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    unique_output_dir = f"{base_output_dir.rstrip(os.sep)}_{timestamp}"
+    unique_output_dir = f"{base_output_dir.rstrip(os.sep)}_MEME_{timestamp}" # Indicate MEME in dir name
 
     try:
         logger.info(f"Creating unique output directory for this run: {unique_output_dir}")
@@ -714,51 +751,34 @@ def main():
          logger.error(f"Failed to create output directory {unique_output_dir}: {e}")
          sys.exit(1)
 
-    # Check Conda environment existence early
+    # Check Conda environment (same as before)
     try:
         logger.info(f"Checking Conda environment '{args.conda_env}'...")
-        # Use 'conda list' in the target env; more reliable than 'env list' parsing
-        # Redirect stderr to stdout to capture potential "environment not found" errors
         result = subprocess.run(['conda', 'run', '-n', args.conda_env, 'conda', 'list'], check=True, capture_output=True, text=True, timeout=30)
         logger.info(f"Conda environment '{args.conda_env}' seems accessible.")
-    except FileNotFoundError:
-        logger.error("Could not run 'conda'. Is Conda installed and in your PATH?")
-        sys.exit(1)
-    except subprocess.TimeoutExpired:
-         logger.error(f"Timed out checking conda environment '{args.conda_env}'.")
-         sys.exit(1)
-    except subprocess.CalledProcessError as e:
-        logger.error(f"Failed to access Conda environment '{args.conda_env}'. Is it activated or does it exist?")
-        logger.error(f"Error details: {e.stderr}")
-        sys.exit(1)
     except Exception as e:
-        logger.error(f"An unexpected error occurred while checking the Conda environment: {e}")
+        logger.error(f"Failed Conda check for environment '{args.conda_env}': {e}", exc_info=True)
         sys.exit(1)
 
 
-    # Load validation data ONCE, it will be passed (by pickling) to workers
+    # Load validation data (same as before)
     try:
         logger.info("Loading shared validation data...")
         validation_df = load_validation_data(args.validation_csv, args.master_fasta)
-        # Pre-check if property columns exist
         missing_props = [p for p in args.properties if p not in validation_df.columns]
         if missing_props:
              logger.error(f"Specified property columns not found in validation data: {missing_props}")
-             logger.error(f"Available columns: {validation_df.columns.tolist()}")
              sys.exit(1)
         logger.info("Shared validation data loaded and properties checked.")
-    except (FileNotFoundError, KeyError, ValueError, Exception) as e:
+    except Exception as e:
          logger.error(f"Failed to load or prepare validation data: {e}", exc_info=True)
          sys.exit(1)
 
 
-    # --- Cluster File Selection Logic ---
+    # --- Cluster File Selection Logic (same as before) ---
     all_fasta_files_paths = glob.glob(os.path.join(args.fasta_dir, "cluster_*.fasta"))
-    if not all_fasta_files_paths:
-        logger.error(f"No 'cluster_*.fasta' files found in directory: {args.fasta_dir}")
-        sys.exit(1)
-    logger.info(f"Found {len(all_fasta_files_paths)} potential cluster FASTA files.")
-
+    # ... (rest of the selection logic using --top_k_clusters or --min_cluster_size) ...
+    # [Copy the exact selection logic block from the previous response here]
     fasta_files_to_process = []
     if args.top_k_clusters is not None and args.top_k_clusters > 0:
         k = args.top_k_clusters
@@ -766,13 +786,11 @@ def main():
         cluster_sizes = []
         logger.info("Counting sequences in all found clusters...")
         count_start_time = time.time()
-        # This counting can be parallelized too if it takes too long for huge numbers of files
         for f_path in all_fasta_files_paths:
             size = count_fasta_sequences(f_path)
-            if size > 0:
+            if size > 0: # Only consider non-empty files with >0 sequences
                 cluster_sizes.append((size, f_path))
         logger.info(f"Sequence counting took {time.time() - count_start_time:.2f} seconds.")
-
 
         if not cluster_sizes:
              logger.error("No non-empty cluster files found.")
@@ -788,13 +806,12 @@ def main():
         logger.info(f"Selected {len(fasta_files_to_process)} clusters for processing based on Top K={k}.")
         if len(top_k_clusters) < k:
              logger.warning(f"Found fewer than {k} non-empty clusters ({len(top_k_clusters)} found). Processing all of them.")
-        # Log size range of selected clusters
         if fasta_files_to_process:
              min_size = top_k_clusters[-1][0]
              max_size = top_k_clusters[0][0]
              logger.info(f"Size range of selected clusters: {min_size} to {max_size} sequences.")
 
-    elif args.min_cluster_size is not None and args.min_cluster_size > 0:
+    elif args.min_cluster_size is not None and args.min_cluster_size >= 1: # Ensure min_size is at least 1
         min_size_threshold = args.min_cluster_size
         logger.info(f"Filtering clusters smaller than {min_size_threshold} sequences...")
         filtered_out_count = 0
@@ -804,7 +821,6 @@ def main():
             if seq_count >= min_size_threshold:
                 fasta_files_to_process.append(f_path)
             else:
-                # logger.debug(f"Filtering out {os.path.basename(f_path)} (size: {seq_count})")
                 filtered_out_count += 1
         logger.info(f"Sequence counting and filtering took {time.time() - count_start_time:.2f} seconds.")
 
@@ -814,59 +830,45 @@ def main():
         logger.info(f"Filtered out {filtered_out_count} clusters. Processing {len(fasta_files_to_process)} clusters >= {min_size_threshold} sequences.")
     else:
         logger.warning("No filtering specified (--top_k_clusters or --min_cluster_size).")
-        # Safety check for large number of files without filtering
-        safety_limit = 5000 # Adjust as needed
+        safety_limit = 5000
         if len(all_fasta_files_paths) > safety_limit:
-             logger.error(f"Found {len(all_fasta_files_paths)} clusters, which exceeds the safety limit of {safety_limit} when no filtering is applied.")
-             logger.error("Please use --top_k_clusters or --min_cluster_size to select a subset.")
+             logger.error(f"Found {len(all_fasta_files_paths)} clusters, exceeding safety limit {safety_limit} without filtering.")
+             logger.error("Please use --top_k_clusters or --min_cluster_size.")
              sys.exit(1)
         else:
              logger.info(f"Proceeding to process all {len(all_fasta_files_paths)} found clusters.")
              fasta_files_to_process = all_fasta_files_paths
+    # --- [End of selection logic block] ---
 
 
-    # --- Parallel Execution ---
+    # --- Parallel Execution (same structure, but calls worker using MEME) ---
     all_cluster_results = []
-    # Determine number of workers
     max_workers = args.num_workers if args.num_workers is not None else os.cpu_count()
-    logger.info(f"Starting parallel processing for {len(fasta_files_to_process)} selected clusters using up to {max_workers} workers...")
-
-    # Ensure validation_df is not excessively large before passing to workers
-    # (Serialization cost) - Optional check based on expected data size
-    # validation_df_size_mb = validation_df.memory_usage(deep=True).sum() / (1024**2)
-    # if validation_df_size_mb > 500: # Example threshold: 500 MB
-    #      logger.warning(f"Validation DataFrame size is ~{validation_df_size_mb:.1f} MB. Passing large data to workers can be slow.")
+    logger.info(f"Starting parallel processing for {len(fasta_files_to_process)} selected clusters using up to {max_workers} workers (MEME)...")
 
     with concurrent.futures.ProcessPoolExecutor(max_workers=max_workers) as executor:
-        # Submit all tasks
         future_to_fasta = {
             executor.submit(process_single_cluster, fasta_path, validation_df, unique_output_dir, args): fasta_path
             for fasta_path in fasta_files_to_process
         }
-
+        # ... (rest of the result collection loop is identical to previous response) ...
         num_processed = 0
         num_successful = 0
         num_failed = 0
-        # Log progress roughly 20 times or every 100 files, whichever is more frequent
         log_interval = min(max(1, len(fasta_files_to_process) // 20), 100)
 
         for future in concurrent.futures.as_completed(future_to_fasta):
             fasta_path = future_to_fasta[future]
             cluster_name_simple = os.path.splitext(os.path.basename(fasta_path))[0]
             try:
-                result_df = future.result() # Get result or raise exception from worker
+                result_df = future.result()
                 if result_df is not None and not result_df.empty:
                     all_cluster_results.append(result_df)
-                    # logger.info(f"Successfully completed processing for {cluster_name_simple}.") # Reduce success log noise
                     num_successful += 1
                 elif result_df is not None and result_df.empty:
-                     # logger.info(f"Processing completed for {cluster_name_simple}, but no correlation results were generated.")
-                     num_successful += 1 # Count as processed, even if no results
+                     num_successful += 1
                 else:
-                    # Failure was handled within worker and returned None
-                    # logger.warning(f"Processing failed or produced no results for {cluster_name_simple}.") # Logged within worker
                     num_failed += 1
-
             except Exception as exc:
                 logger.error(f"!!! Main loop caught exception from worker processing {cluster_name_simple}: {exc}", exc_info=True)
                 num_failed += 1
@@ -874,11 +876,11 @@ def main():
             num_processed += 1
             if num_processed % log_interval == 0 or num_processed == len(fasta_files_to_process):
                  logger.info(f"Progress: {num_processed}/{len(fasta_files_to_process)} clusters processed ({num_successful} successful, {num_failed} failed/skipped).")
-
+    # --- [End of result collection loop] ---
 
     logger.info(f"Parallel processing finished. Processed {num_processed} clusters: {num_successful} successful, {num_failed} failed/skipped.")
 
-    # --- Final Aggregation and Output (in main process) ---
+    # --- Final Aggregation and Output (same as before) ---
     if not all_cluster_results:
         logger.warning("No correlation results were generated across any clusters.")
         total_time = time.time() - pipeline_start_time
@@ -888,56 +890,34 @@ def main():
     logger.info(f"Aggregating results from {len(all_cluster_results)} successful clusters...")
     try:
         final_results_df = pd.concat(all_cluster_results, ignore_index=True)
-
-        # Optional: Global FDR correction across all results (might be more appropriate)
-        # logger.info("Applying global FDR correction across all cluster results...")
-        # valid_p_mask_global = final_results_df["p_pearson"].notna()
-        # if valid_p_mask_global.any():
-        #     pvals_global = final_results_df.loc[valid_p_mask_global, "p_pearson"].values
-        #     if len(pvals_global) > 0:
-        #          reject_g, p_adj_g, _, _ = multipletests(pvals_global, method="fdr_bh")
-        #          final_results_df.loc[valid_p_mask_global, "p_adj_pearson_global"] = p_adj_g
-        #          final_results_df.loc[valid_p_mask_global, "significant_pearson_global"] = reject_g
-        #          final_results_df["significant_pearson_global"] = final_results_df["significant_pearson_global"].fillna(False).astype(bool)
-        #     else:
-        #          final_results_df["p_adj_pearson_global"] = np.nan
-        #          final_results_df["significant_pearson_global"] = False
-        # else:
-        #      final_results_df["p_adj_pearson_global"] = np.nan
-        #      final_results_df["significant_pearson_global"] = False
-
-        # Sort by significance (using cluster-level FDR here, change to global if calculated)
         sort_cols = ["significant_pearson", "p_adj_pearson"]
-        # if "significant_pearson_global" in final_results_df.columns:
-        #      sort_cols = ["significant_pearson_global", "p_adj_pearson_global"]
-
         final_results_df.sort_values(by=sort_cols, ascending=[False, True], inplace=True)
-
     except Exception as e:
          logger.error(f"Failed during final results aggregation or sorting: {e}", exc_info=True)
-         # Try to save intermediate results if aggregation fails? Might be too complex.
          sys.exit(1)
-
 
     final_output_path = os.path.join(unique_output_dir, args.results_file)
     try:
-        final_results_df.to_csv(final_output_path, index=False, float_format='%.5g') # Control float precision
+        final_results_df.to_csv(final_output_path, index=False, float_format='%.5g')
         logger.info(f"Combined correlation results saved to: {final_output_path}")
         logger.info(f"Final results table shape: {final_results_df.shape}")
-        # Log top results summary
-        num_sig_final = final_results_df['significant_pearson'].sum() # Use 'significant_pearson_global' if applied
+        num_sig_final = final_results_df['significant_pearson'].sum()
         logger.info(f"Total significant correlations found (after cluster-level FDR): {num_sig_final}")
         if num_sig_final > 0:
             logger.info("Top 5 significant results:")
-            print(final_results_df[final_results_df['significant_pearson']].head().to_string()) # Print top 5 rows
+            # Increase display width for pandas output
+            pd.set_option('display.width', 1000)
+            pd.set_option('display.max_columns', None)
+            print(final_results_df[final_results_df['significant_pearson']].head().to_string())
+            pd.reset_option('display.width')
+            pd.reset_option('display.max_columns')
 
     except Exception as e:
         logger.error(f"Failed to save final results to {final_output_path}: {e}", exc_info=True)
 
     total_time = time.time() - pipeline_start_time
-    logger.info(f"--- Pipeline Finished Successfully in {total_time:.2f} seconds ({total_time/60:.2f} minutes) ---")
+    logger.info(f"--- Pipeline Finished Successfully in {total_time:.2f} seconds ({total_time/60:.2f} minutes) (using MEME) ---")
 
 
 if __name__ == "__main__":
-    # This check is important for multiprocessing reliability on some OS (like Windows)
     main()
